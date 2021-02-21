@@ -1,0 +1,43 @@
+.school {
+  display: flex;
+  margin: 1rem;
+}
+
+.page-navigation {
+  background-color: #012169;
+}
+
+.navigation {
+  list-style-type: none;
+}
+
+.navigation a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.navigation li:hover {
+  background-color: #0c2768;
+}
+
+.navigation li {
+  padding: 1rem;
+  text-align: center;
+}
+
+.navigation li:not(:first-child) {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navigation li:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.about-company {
+  border: 1px solid;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 3px 3px 3px 3px grey;
+}
