@@ -4,38 +4,89 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Новости</title>
-  <link rel="stylesheet" href="../style1.css">
-  <link rel="shortcut icon" href="../images/icon.png">
+  <link rel="stylesheet" href="../styles/newsstyles.css">
+  <link rel="stylesheet" href="../generalStyle.css">
+  <link rel="shortcut icon" href="../general_images/icon.png">
 </head>
 <body>
-  <div class="header-info">
-    <div class="logo1">
-      <img src="../images/mainpage/W.png" alt="#">
-    </div>
-    <div class="phone">
-      <a href="tel:+375292868385" class="block">
-        <img src="../images/mainpage/mts.png" alt="MTS" width="3%">
-        <img src="../images/mainpage/viber.png" alt="viber" width="3%">
-        <span class="number">+375 29 286-83-85</span>
-        <img src="../images/mainpage/post.png" alt="gmail" width="3%">
-        <span class="mail">v.pavel.03@gmail.com</span>
-      </a>
-    </div>
-    <div class="search">
+  <div class="wrapper">
+    <header>
+      <div class="cover">
+        <p>
+          <a href="../index.html"><img src="../images_1st_page/W.png" alt="logo" class="logo"></a> 
+          Школа английского языка "Winnfield" это уникальный профессиональный центр по изучению английского языка. Наши курсы проработаны со всей тщательностью и созданы командой настоящих профессионалов в области преподавания английского языка, которые неустанно работают над тем, чтобы усовершенствовать процесс обучения.
+        </p>
+      </div>
+      <div class="header">
+        <aside class="header-contacts">
+          <p>Контакты:</p>
+          <a href="tel:+375292868385" class="block">
+            <img src="../general_images/mts.png" alt="MTS" width="3%">
+            <img src="../general_images/viber.png" alt="viber" width="3%">
+            <span class="number">+375 29 286-83-85</span>
+          </a>
+          <a href="mailto:v.pavel.03@gmail.com" class="block">
+            <img src="../general_images/post.png" alt="gmail" width="3%">
+            <span class="mail">v.pavel.03@gmail.com</span>
+          </a>
+        </aside>
+      <nav>
+        <ul class="menu">
+          <li><a href="company.html">О нас</a></li>
+          <li><a href="courses.html" class="down">Курсы <span></span></a>
+            <ul class="submenu">
+              <li><a href="">Курсы английского для детей</a></li>
+              <li><a href="">Курсы английского для взрослых</a></li>
+            </ul>
+          </li>
+          <li class="down"><a href="advantages.html">Акции <span></span></a>
+            <ul class="submenu">
+              <li><a href="">"Беспроцентная рассрочка"</a></li>
+              <li><a href="">"Больше балл-больше скидка"</a></li>
+              <li><a href="pages/">"Студенческая"</a></li>
+            </ul>
+          </li>
+          <li><a href="teachers.html">Преподаватели</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="search">
       <form action="">
-        <label for="#"> <img src="../images/mainpage/search-image.png" alt="search" width="3%">
-          <input type="text" placeholder="Поиск">
+        <label> 
+          <img src="" alt="search" width="3%">
+          <input type="text" placeholder="Поиск" class="search-window">
         </label>
       </form>
+      </div>
+      </div>
+    </header>
+  <div class="news-block"> 
+    <div class="news1">
+      <h3>Выпускникам</h3>
+      <p>Мы поздравляем наших выпускников закончивших обучение и приглашаем на торжественное вручение сертификатов, которое состоится 24.04.2021.</p>
+      <img src="../news_images/news1.jpg" alt="Выпуск" class="first_news">
     </div>
-  </div>
-  <section>
-    
-  </section>
+    <div class="news2">
+      <h3>Внимание</h3>
+      <img src="../news_images/news2.png" alt="Выпуск" class="second_news">
+      <p></p>
+    </div>
+    <div class="news3">
+      <h3>Индивидуальное обучение</h3>
+      <img src="../news_images/news3.png" alt="Выпуск" class="third_news">
+      <p></p>
+    </div>
+    <div class="news3">
+      <h3>Подарочные сертификаты</h3>
+      <img src="../news_images/news4.png" alt="Выпуск" class="fourth_news">
+      <p></p>
+    </div>
+    </div>
   <footer>
     <div class="about-us">
       <p>
-        О нас: <br>
+        <span class="gold-word">О нас:</span><br>
         Частное предприятие Школа английского языка "Winnfield" <br>
         УНП 000 000 000 <br>
         Режим работы: Пн-Пт 10.00-20.00 <br>
@@ -44,23 +95,25 @@
     </div>
     <div class="contacts">
       <p>
-        Контакты: <br>
+        <span class="gold-word">Контакты:</span> <br>
         +375 29 286-83-85 <br>
         e-mail: v.pavel.03@gmail.com <br> <hr>
-        <a href=""><img src="../images/mainpage/vk.png" alt="vk" width="10%"></a>
-        <a href=""><img src="../images/mainpage/tg.png" alt="telegram" width="10%"></a>
+        <a href=""><img src="../general_images/vk.png" alt="vk" width="10%"></a>
+        <a href=""><img src="../general_images/tg.png" alt="telegram" width="10%"></a>
       </p>
     </div>
     <div class="campaigns">
-      <p>Акции<br>
-       <a href="">"Беспроцентная рассрочка"</a><br>
-       <a href="">"Больше балл-больше скидка"</a><br>
-       <a href="">"Студенческая"</a><br>
+      <p>
+        <span class="gold-word">Акции</span><br>
+        <a href="">"Беспроцентная рассрочка"</a><br>
+        <a href="">"Больше балл-больше скидка"</a><br>
+        <a href="">"Студенческая"</a><br>
       </p> 
     </div>
     <div class="questions">
       <a href="">Задать вопрос</a>
     </div>
   </footer>
+  </div>
 </body> 
 </html>

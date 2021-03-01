@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #333333;
+  @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+  font-family: 'Architects Daughter', cursive;
+}
+
+header {
+  min-height: 500px;
+  position: relative;
+  background-image: url(images_1st_page/background.png);
+}
+
+.cover {
+  background-color: rgba(51, 51, 51, 0.5);
+  position: absolute;
+  width: 30%;
+  padding: 1rem;
+  color: white;
+  font-size: 18px;
+  top: 10rem;
+  right: 20rem;
+  box-shadow: 0 0 3px 0 white;
+}
+
+.logo {
+  float: left;
+  margin: 1rem;
+}
+
+.header-image {
+  float: right;
+  width: 30%;
+  margin: 0.5rem;
+}
+
+.header  {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-contacts {
+  color: white;
+  background-color: rgba(51, 51, 51, 0.5);
+  width: 15%;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin: 1rem;
+  text-decoration: none;
+}
+
+.down {
+  position: relative;
+}
+
+.down:after {
+  content: "";
+  position: absolute;
+  top: 0.6rem;
+  left: 3.5rem;
+  width: 0;
+  height: 0;
+  border: 5px solid;
+  border-color: white transparent transparent transparent;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  backface-visibility: hidden;
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: block;
+  }
+}
+
+.menu > li {
+  display: inline-block;
+  position: relative;
+  margin: 1rem;
+}
+
+.menu li a:hover {
+  color: black;
+}
+
+.submenu {
+  display: block;
+  color: white;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+  width: 300px;
+
+}
+
+.menu > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.submenu li a {
+  color: white;
+  font-size: 18px;
+  line-height: 36px;
+  padding: 0 25px;
+}
+
+.search {
+  position: relative;
+  right: 0;
+  top: 2rem;
+}
+
+.search-window {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.search-window:focus {
+  width: 90%;
+  border-radius: 1%;
+}
+
+.search-window:hover {
+  border: 1px solid #2CA5E0;
+}
+
+footer {
+  display: flex;
+  color: white;
+  padding: 1%;
+  width: 100%;
+}
+
+@media (max-width:600px) {
+  footer {
+    display: block;
+  }
+}
+
+.about-us, .contacts, .campaigns, .questions {
+  margin: auto;
+}
+
+.questions a, .campaigns a, .block {
+  color: white;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gold-word {
+  color: gold;
+}

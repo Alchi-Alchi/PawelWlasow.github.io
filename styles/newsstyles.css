@@ -1,0 +1,20 @@
+.news-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.news1, .news2, .news3, .news4 {
+  color: white;
+  float: left;
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.news1:hover, .news2:hover, .news3:hover, .news4:hover {
+  background-color: #383838;
+  box-shadow: 0 0 3px 0 white;
+}
+
+.first_news, .second_news, .third_news, .fourth_news {
+  width: 10%;
+}

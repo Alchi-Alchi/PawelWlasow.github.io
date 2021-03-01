@@ -1,0 +1,12 @@
+.wrapper_for_groups {
+  display: flex;
+  justify-content: space-around;
+}
+
+.adult_group, .children_group {
+  color: white;
+  border: 1px solid gold;
+  border-radius: 10px;
+  padding: 1rem;
+}
+

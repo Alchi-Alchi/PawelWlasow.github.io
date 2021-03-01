@@ -1,0 +1,87 @@
+input {
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.set_group {
+  display: flex;
+  margin: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  .set_group {
+    display: block;
+    height: 10%;
+  }
+}
+
+.school_info p {
+  color: white;
+}
+
+.about_school {
+  display: flex;
+  color: white;
+  font-size: 18px;
+}
+
+.advantages {
+  list-style-image: url(images_1st_page/arrow.png);
+  color: white;
+}
+
+.school_info h2 {
+  color: white;
+  text-align: center;
+}
+
+.certificate {
+  float: left;
+}
+
+.list {
+  display: flex;
+}
+
+.list h2 {
+  text-align: center;
+  color: white;
+}
+
+.advertising-image {
+  float: left;
+  width: 30%;
+  margin: 2rem;
+}
+
+.sign-up {
+  width: 100%;
+  color: white;
+  padding: 10px;
+  margin-top: 2%;
+  text-align: center;
+}
+
+button {
+  color: white;
+  border: 1px solid gold;
+  background-color: transparent;
+  padding: 10px 40px;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.courses-button {
+  background-color: #4e0814;
+  border: none;
+  width: 99%;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.courses-button:hover {
+  opacity: 1;
+}
