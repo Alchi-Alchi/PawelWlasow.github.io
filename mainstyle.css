@@ -21,14 +21,8 @@ input {
 }
 
 .about_school {
-  display: flex;
   color: white;
   font-size: 18px;
-}
-
-.advantages {
-  list-style-image: url(images_1st_page/arrow.png);
-  color: white;
 }
 
 .school_info h2 {
@@ -38,21 +32,7 @@ input {
 
 .certificate {
   float: left;
-}
-
-.list {
-  display: flex;
-}
-
-.list h2 {
-  text-align: center;
-  color: white;
-}
-
-.advertising-image {
-  float: left;
   width: 30%;
-  margin: 2rem;
 }
 
 .sign-up {

@@ -3,18 +3,18 @@
   flex-direction: column;
 }
 
-.news1, .news2, .news3, .news4 {
+.news-block__item {
   color: white;
   float: left;
-  margin: 0 1rem;
+  margin: 0;
   padding: 1rem;
 }
 
-.news1:hover, .news2:hover, .news3:hover, .news4:hover {
+.news-block__item:hover {
   background-color: #383838;
-  box-shadow: 0 0 3px 0 white;
+  box-shadow: 0 0 3px 0 rgb(153, 149, 149);
 }
 
-.first_news, .second_news, .third_news, .fourth_news {
+.news-image {
   width: 10%;
 }

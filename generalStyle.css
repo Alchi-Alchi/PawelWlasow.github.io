@@ -112,7 +112,6 @@ nav a {
   opacity: 0;
   z-index: 1;
   width: 300px;
-
 }
 
 .menu > li:hover .submenu {
@@ -127,26 +126,59 @@ nav a {
   padding: 0 25px;
 }
 
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
 .search {
   position: relative;
   right: 0;
   top: 2rem;
 }
 
-.search-window {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
+.search__button {
+  background: rgba(255, 255, 255, 1);
+  border: none;
+  border-radius: 42px;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
 }
 
-.search-window:focus {
-  width: 90%;
-  border-radius: 1%;
+.search__button::before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: rgba(51, 51, 51, 1);
 }
 
-.search-window:hover {
-  border: 1px solid #2CA5E0;
+.search__window {
+  height: 42px;
+  width: 0;
+  padding: 0 42px 0 15px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: .4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
 }
+
+.search__window:focus {
+background: rgba(255, 255, 255, 1);
+ width: 300px;
+ z-index: 1;
+ border-bottom: 2px solid #F9F0DA;
+}
+
 
 footer {
   display: flex;

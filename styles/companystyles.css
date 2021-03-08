@@ -2,3 +2,23 @@
   color: white;
   padding: 1rem;
 }
+
+.advantages {
+  list-style-image: url(../company-images/arrow.png);
+  color: white;
+}
+
+.list {
+  
+}
+
+.list h2 {
+  text-align: center;
+  color: white;
+}
+
+.advertising-image {
+  float: left;
+  width: 30%;
+  margin: 2rem;
+}

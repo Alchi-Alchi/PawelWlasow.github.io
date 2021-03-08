@@ -1,6 +1,7 @@
 .wrapper_for_groups {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 1rem;
 }
 
 .adult_group, .children_group {
@@ -10,3 +11,63 @@
   padding: 1rem;
 }
 
+.nav-menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.card-course {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 400px;
+  background: #4e0814;
+  color: black;
+  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 1);
+}
+
+.card-course__header {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.card-course__content {
+  padding: 1rem;
+  text-align: center;
+  background: #E5EBF1;
+  margin: -15px;
+}
+
+.card-course__content_title {
+  padding: 1rem;
+  background: #3B4859;
+  color: white;
+}
+
+.card-course__footer {
+  margin-top: 1rem;
+  padding: auto;
+  font-size: 24px;
+  text-align: center;
+}
+
+.card-course__footer a {
+  text-decoration: none;
+  color: white;
+  vertical-align: middle;
+}
+
+.card-course ul, .nav-menu ul {
+  list-style-type: none;
+}
+
+.card-course ul li:nth-child(odd) {
+  background: rgb(129, 129, 129);
+}
+
+.card-course ul li:nth-child(even) {
+  background: rgb(95, 138, 196);
+}
