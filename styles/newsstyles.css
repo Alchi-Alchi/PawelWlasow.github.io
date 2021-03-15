@@ -1,12 +1,13 @@
 .news-block {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .news-block__item {
+  width: 20%;
+  margin: 1rem;
   color: white;
-  float: left;
-  margin: 0;
   padding: 1rem;
 }
 
@@ -16,5 +17,38 @@
 }
 
 .news-image {
-  width: 10%;
+  width: 50%;
+  float: left;
+  margin: 1em;
+}
+
+.subscription {
+  padding: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.subscription__title {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+
+.subscription__input {
+  margin: auto;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.subscription__button {
+  padding: 1rem;
+  margin: 1rem auto;
+  border: none;
+  font-size: 18px;
+  background: #A01100;
+  color: white;
+}
+
+.subscription__button:hover {
+  background: #FF0000;
 }

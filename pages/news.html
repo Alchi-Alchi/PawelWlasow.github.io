@@ -6,6 +6,7 @@
   <title>Новости</title>
   <link rel="stylesheet" href="../styles/newsstyles.css">
   <link rel="stylesheet" href="../generalStyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="shortcut icon" href="../general_images/icon.png">
 </head>
 <body>
@@ -13,8 +14,8 @@
     <header>
       <div class="cover">
         <p>
-          <a href="../index.html"><img src="../images_1st_page/W.png" alt="logo" class="logo"></a> 
-          Школа английского языка "Winnfield" это уникальный профессиональный центр по изучению английского языка. Наши курсы проработаны со всей тщательностью и созданы командой настоящих профессионалов в области преподавания английского языка, которые неустанно работают над тем, чтобы усовершенствовать процесс обучения.
+          <a href="../index.html"><img src="../images_1st_page/W.png" alt="logo" class="logo"></a>
+          Territory of successful learning
         </p>
       </div>
       <div class="header">
@@ -32,41 +33,48 @@
         </aside>
         <nav>
           <ul class="menu">
-            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-            <li><a href="pages/company.html">О нас</a></li>
-            <li><a href="pages/courses.html" class="down">Услуги<span></span></a>
+            <li><a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="company.html">О нас</a></li>
+            <li><a href="services.html" class="down">Услуги<span></span></a>
               <ul class="submenu">
                 <li><a href="">Услуги переводчика</a></li>
                 <li><a href="">Индивидуальное обучение</a></li>
               </ul>
             </li>
-            <li class="down"><a href="pages/advantages.html">Акции <span></span></a>
+            <li class="down"><a href="advantages.html">Акции <span></span></a>
               <ul class="submenu">
                 <li><a href="">"Беспроцентная рассрочка"</a></li>
                 <li><a href="">"Больше балл-больше скидка"</a></li>
-                <li><a href="pages/">"Студенческая"</a></li>
+                <li><a href="">"Студенческая"</a></li>
               </ul>
             </li>
-            <li><a href="pages/teachers.html">Курсы</a></li>
-            <li><a href="pages/news.html">Новости</a></li>
-            <li><a href="pages/contacts.html">Контакты</a></li>
+            <li><a href="courses.html">Курсы</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
-      <div class="search">
-      <form action="">
-        <label> 
-          <img src="" alt="search" width="3%">
-          <input type="text" placeholder="Поиск" class="search-window">
-        </label>
-      </form>
-      </div>
+        <div class="search">
+          <form action="">
+            <label> 
+              <input type="search" placeholder="Поиск" class="search__window">
+              <button type="submit" class="search__button"></button>
+            </label>
+          </form>
+        </div>
       </div>
     </header>
+    <div class="subscription">
+      <form>
+        <p class="subscription__title">Подписка</p>
+        <input type="text" placeholder="E-mail" class="subscription__input"><br>
+        <button class="subscription__button">Получать рассылку</button>
+      </form>
+    </div>
   <div class="news-block"> 
     <div class="news-block__item">
       <h3>Выпускникам</h3>
-      <p>Мы поздравляем наших выпускников закончивших обучение и приглашаем на торжественное вручение сертификатов, которое состоится 24.04.2021.</p>
       <img src="../news_images/news1.jpg" alt="Выпуск" class="news-image">
+      <p>Мы поздравляем наших выпускников закончивших обучение по курсу "English academy" и приглашаем на торжественное вручение сертификатов, которое состоится 24.04.2021 в аудитории №3.</p>
     </div>
     <div class="news-block__item">
       <h3>Внимание</h3>
@@ -81,7 +89,7 @@
     <div class="news-block__item">
       <h3>Подарочные сертификаты</h3>
       <img src="../news_images/news4.png" alt="Выпуск" class="news-image">
-      <p></p>
+      <p>Подарочный сертификат от школы английского "Winnfield" — это подарок, который будет самым желанным для тех, кто хочет изучать английский, кто мечтает много путешествовать или даже получить продвижение по карьерной лестнице, ведь сегодня знание английского во многих случаях является необходимым условием для успешной карьеры.</p>
     </div>
     <div class="news-block__item">
       <h3>Приглашение</h3>
@@ -117,7 +125,7 @@
       </p> 
     </div>
     <div class="questions">
-      <a href="">Задать вопрос</a>
+      <a href=""> <span class="gold-word">Задать вопрос</span></a>
     </div>
   </footer>
   </div>

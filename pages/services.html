@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Акции</title>
-  <link rel="stylesheet" href="../styles/advantagesstyles.css">
+  <title>Школа английского языка</title>
+  <link rel="stylesheet" href="../styles">
   <link rel="stylesheet" href="../generalStyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="shortcut icon" href="../general_images/icon.png">
 </head>
 <body>
@@ -13,7 +14,7 @@
     <header>
       <div class="cover">
         <p>
-          <a href="../index.html"><img src="../images_1st_page/W.png" alt="logo" class="logo"></a> 
+          <a href="index.html"><img src="../images_1st_page/W.png" alt="logo" class="logo" title="На главную"></a> 
           Territory of successful learning
         </p>
       </div>
@@ -32,55 +33,37 @@
         </aside>
       <nav>
         <ul class="menu">
-          <li><a href="company.html">О нас</a></li>
-          <li><a href="courses.html" class="down">Курсы<span></span></a>
+          <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+          <li><a href="pages/company.html">О нас</a></li>
+          <li><a href="pages/services.html" class="down">Услуги<span></span></a>
             <ul class="submenu">
-              <li><a href="">Курсы английского для детей</a></li>
-              <li><a href="">Курсы английского для взрослых</a></li>
+              <li><a href="">Услуги переводчика</a></li>
+              <li><a href="">Индивидуальное обучение</a></li>
             </ul>
           </li>
-          <li class="down"><a href="advantages.html">Акции<span></span></a>
+          <li class="down"><a href="pages/advantages.html">Акции <span></span></a>
             <ul class="submenu">
               <li><a href="">"Беспроцентная рассрочка"</a></li>
               <li><a href="">"Больше балл-больше скидка"</a></li>
-              <li><a href="">"Студенческая"</a></li>
+              <li><a href="pages/">"Студенческая"</a></li>
             </ul>
           </li>
-          <li><a href="teachers.html">Преподаватели</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="pages/courses.html">Курсы</a></li>
+          <li><a href="pages/news.html">Новости</a></li>
+          <li><a href="pages/contacts.html">Контакты</a></li>
         </ul>
       </nav>
       <div class="search">
-      <form action="">
-        <label> 
-          <img src="" alt="search" width="3%">
-          <input type="text" placeholder="Поиск" class="search-window">
-        </label>
-      </form>
+        <form action="">
+          <label> 
+            <input type="search" placeholder="Поиск" class="search__window">
+            <button type="submit" class="search__button"></button>
+          </label>
+        </form>
       </div>
       </div>
     </header>
-    <div class="card-course_wrapper">
-      <div class="card-course">
-        <div class="card-course__content">
-            <img src="../advantages-images/offer1.png" alt="#" class="card-course__offer" width="100%">
-        </div>
-        <div class="card-course__button"><a href=""><button>Подробнее</button></a></div>
-      </div>
-      <div class="card-course">
-        <div class="card-course__content">
-            <img src="../advantages-images/offer2.png" alt="#" class="card-course__offer" width="100%">
-        </div>
-        <div class="card-course__button"><a href="">Подробнее</a></div>
-      </div>
-      <div class="card-course">
-        <div class="card-course__content">
-            <img src="../advantages-images/offer3.png" alt="#" class="card-course__offer" width="100%">
-        </div>
-        <div class="card-course__button"><a href="">Подробнее</a></div>
-      </div>
-    </div>
+
     <footer>
       <div class="about-us">
         <p>
@@ -109,7 +92,7 @@
         </p> 
       </div>
       <div class="questions">
-        <a href="">Задать вопрос</a>
+        <a href=""><span class="gold-word">Задать вопрос</span></a>
       </div>
     </footer>
   </div>

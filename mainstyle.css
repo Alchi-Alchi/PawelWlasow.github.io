@@ -1,12 +1,20 @@
-input {
-  border: 1px solid white;
-  border-radius: 10px;
-  margin: 1rem;
+.content-text {
+  text-align: center;
+  color: white;
 }
 
 .set_group {
   display: flex;
   margin: 1rem 0;
+}
+
+.set-group__image {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.set-group__image:hover {
+  transform: translateY(-20px);
 }
 
 @media (max-width: 600px) {
@@ -23,6 +31,7 @@ input {
 .about_school {
   color: white;
   font-size: 18px;
+  text-align: center;
 }
 
 .school_info h2 {
@@ -31,8 +40,7 @@ input {
 }
 
 .certificate {
-  float: left;
-  width: 30%;
+  width: 20%;
 }
 
 .sign-up {
@@ -43,7 +51,14 @@ input {
   text-align: center;
 }
 
-button {
+.sign-up__input {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 1rem;
+}
+
+.sign-up__button {
   color: white;
   border: 1px solid gold;
   background-color: transparent;
@@ -53,10 +68,11 @@ button {
 }
 
 .courses-button {
+  font-size: 18px;
   background-color: #4e0814;
+  color: white;
   border: none;
   width: 99%;
-  margin: 0;
   padding: 10px;
   text-align: center;
   opacity: 0.5;

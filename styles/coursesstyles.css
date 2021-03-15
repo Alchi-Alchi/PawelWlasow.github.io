@@ -4,11 +4,14 @@
   margin: 1rem;
 }
 
-.adult_group, .children_group {
-  color: white;
-  border: 1px solid gold;
-  border-radius: 10px;
-  padding: 1rem;
+.nav-menu__wrapper {
+  min-width: 20%;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);;
+}
+
+.nav-menu {
+  position: sticky;
+  top: 0;
 }
 
 .nav-menu ul li a {
@@ -16,58 +19,96 @@
   color: white;
 }
 
-.card-course {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem;
-  border-radius: 10px;
-  max-width: 400px;
-  background: #4e0814;
-  color: black;
-  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 1);
-}
-
-.card-course__header {
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-.card-course__content {
-  padding: 1rem;
-  text-align: center;
-  background: #E5EBF1;
-  margin: -15px;
-}
-
-.card-course__content_title {
-  padding: 1rem;
-  background: #3B4859;
-  color: white;
-}
-
-.card-course__footer {
-  margin-top: 1rem;
-  padding: auto;
-  font-size: 24px;
-  text-align: center;
-}
-
-.card-course__footer a {
-  text-decoration: none;
-  color: white;
-  vertical-align: middle;
-}
-
-.card-course ul, .nav-menu ul {
+.nav-menu ul  {
+  display: block;
   list-style-type: none;
 }
 
-.card-course ul li:nth-child(odd) {
-  background: rgb(129, 129, 129);
+.course-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  background: transparent;
+  color: white;
 }
 
-.card-course ul li:nth-child(even) {
-  background: rgb(95, 138, 196);
+.course-content ul {
+  list-style-image: url(../courses_images/arrow.png);
+}
+
+.card-course__paragraph_icon {
+  text-align: center;
+}
+
+.card-course__paragraph h3 {
+  text-align: center;
+}
+
+.rating-form {
+  text-align: center;
+  border: none;
+}
+
+.rating-form__title {
+
+}
+
+.rating-form__group {
+  position: relative;
+  width: 10em;
+  height: 2em;
+  background-size: 2em auto;
+  background-image: url(../courses_images/off.svg);
+}
+
+.rating-form__star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 2em;
+  height: 2em;
+  font-size: inherit;
+  background-size: 2em auto;
+  appearance: none;
+  cursor: pointer;
+}
+
+.rating-form__star:focus {
+  outline: none;
+}
+
+.rating-form__star:checked, .rating-form__star:hover {
+  background-image: url(../courses_images/on.svg);
+}
+
+.rating-form__star:hover ~ .rating-form__star {
+  background-image: url(../courses_images/off.svg);
+}
+
+.rating-form__star:nth-of-type(1) {
+  z-index: 5;
+  width: 2em;
+}
+
+.rating-form__star:nth-of-type(2) {
+  z-index: 4;
+  width: 4em;
+}
+
+.rating-form__star:nth-of-type(3) {
+  z-index: 3;
+  width: 6em;
+}
+
+.rating-form__star:nth-of-type(4) {
+  z-index: 2;
+  width: 8em;
+}
+
+.rating-form__star:nth-of-type(5) {
+  z-index: 1;
+  width: 10em;
 }

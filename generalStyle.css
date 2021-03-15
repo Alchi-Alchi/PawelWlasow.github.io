@@ -10,7 +10,6 @@ body {
 }
 
 header {
-  min-height: 500px;
   position: relative;
   background-image: url(images_1st_page/background.png);
 }
@@ -41,12 +40,18 @@ header {
 .header  {
   display: flex;
   justify-content: space-between;
+  min-height: 35rem;
 }
 
 .header-contacts {
   color: white;
   background-color: rgba(51, 51, 51, 0.5);
-  width: 15%;
+  width: 10%;
+  transition: all 0.5s ease-in-out;
+}
+
+.header-contacts:hover {
+  width: 20%;
 }
 
 .block {
@@ -128,8 +133,8 @@ nav a {
 
 form {
   position: relative;
-  width: 300px;
-  margin: 0 auto;
+  width: auto;
+  margin-right: 30px;
 }
 
 .search {
@@ -139,11 +144,12 @@ form {
 }
 
 .search__button {
-  background: rgba(255, 255, 255, 1);
+  background: #EFEFEF;
   border: none;
-  border-radius: 42px;
+  border-bottom-right-radius: 42px;
+  border-top-right-radius: 42px;
+  width: 20%;
   height: 42px;
-  width: 42px;
   position: absolute;
   top: 0;
   right: 0;
@@ -153,32 +159,25 @@ form {
 .search__button::before {
   content: "\f002";
   font-family: FontAwesome;
-  font-size: 16px;
+  font-size: 18px;
   color: rgba(51, 51, 51, 1);
 }
 
 .search__window {
   height: 42px;
-  width: 0;
-  padding: 0 42px 0 15px;
+  width: 250px;
+  padding-left: 15px;
   border: none;
-  border-bottom: 2px solid transparent;
+  border-radius: 42px;
   outline: none;
-  background: transparent;
-  transition: .4s cubic-bezier(0, 0.8, 0, 1);
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 3;
+  background: white;
+  transition: .3s linear;
+  position: relative;
 }
 
 .search__window:focus {
-background: rgba(255, 255, 255, 1);
  width: 300px;
- z-index: 1;
- border-bottom: 2px solid #F9F0DA;
 }
-
 
 footer {
   display: flex;
@@ -210,4 +209,8 @@ footer {
 
 .gold-word {
   color: gold;
+}
+
+.red-word {
+  color: #CC0000;
 }
