@@ -1,24 +1,31 @@
-.company_info {
+.company-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 20%;
+}
+
+.company-info__text, .certificate {
   color: white;
-  padding: 1rem;
+  padding-left: 10%;
+}
+
+.company-info__text_image {
+  float: left;
+  width: 20%;
+  margin: 5%;
+}
+
+.certificate {
+  text-align: center;
+}
+
+.certificate__image {
+  width: 40%;
+  margin: 1rem;
 }
 
 .advantages {
   list-style-image: url(../company-images/arrow.png);
   color: white;
-}
-
-.list {
-  
-}
-
-.list h2 {
-  text-align: center;
-  color: white;
-}
-
-.advertising-image {
-  float: left;
-  width: 30%;
-  margin: 2rem;
 }

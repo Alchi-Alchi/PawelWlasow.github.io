@@ -4,29 +4,13 @@
 
 body {
   margin: 0;
-  background-color: #333333;
+  background-color: #1E1F26;
   @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
   font-family: 'Architects Daughter', cursive;
-}
-
-header {
-  position: relative;
-  background-image: url(images_1st_page/background.png);
-}
-
-.cover {
-  background-color: rgba(51, 51, 51, 0.5);
-  position: absolute;
-  width: 30%;
-  padding: 1rem;
-  color: white;
   font-size: 18px;
-  top: 10rem;
-  right: 20rem;
-  box-shadow: 0 0 3px 0 white;
 }
 
-.logo {
+#logo {
   float: left;
   margin: 1rem;
 }
@@ -37,22 +21,22 @@ header {
   margin: 0.5rem;
 }
 
-.header  {
+header {
+  box-shadow: 0 1px 3px 3px rgba(44, 48, 58, 1);
+}
+
+.menu_and_search {
   display: flex;
   justify-content: space-between;
-  min-height: 35rem;
+  background-color: #111111;
 }
 
-.header-contacts {
-  color: white;
-  background-color: rgba(51, 51, 51, 0.5);
-  width: 10%;
-  transition: all 0.5s ease-in-out;
-}
+/* .slider-content  {
+  padding-bottom: 25%;
+  background-image: url(images_1st_page/background.jpg);
+  background-size: cover;
+} */
 
-.header-contacts:hover {
-  width: 20%;
-}
 
 .block {
   display: flex;
@@ -69,8 +53,8 @@ header {
 .down:after {
   content: "";
   position: absolute;
-  top: 0.6rem;
-  left: 3.5rem;
+  top: 1rem;
+  left: 5rem;
   width: 0;
   height: 0;
   border: 5px solid;
@@ -102,10 +86,11 @@ nav a {
   display: inline-block;
   position: relative;
   margin: 1rem;
+  font-size: 24px;
 }
 
 .menu li a:hover {
-  color: black;
+  color: orange;
 }
 
 .submenu {
@@ -124,11 +109,23 @@ nav a {
   opacity: 1;
 }
 
+.submenu li {
+  background-color: rgba(51, 51, 51, 0.2);
+}
+
+.submenu li:not(:first-child) {
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.submenu li:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .submenu li a {
   color: white;
   font-size: 18px;
   line-height: 36px;
-  padding: 0 25px;
+  padding: 1rem;
 }
 
 form {
@@ -153,6 +150,7 @@ form {
   position: absolute;
   top: 0;
   right: 0;
+  outline: none;
   cursor: pointer;
 }
 
@@ -182,11 +180,13 @@ form {
 footer {
   display: flex;
   color: white;
+  background-color: #111111;
   padding: 1%;
   width: 100%;
+  box-shadow: 0 1px 3px 3px rgba(44, 48, 58, 1);
 }
 
-@media (max-width:600px) {
+@media (max-width:900px) {
   footer {
     display: block;
   }
@@ -207,10 +207,15 @@ footer {
   justify-content: space-between;
 }
 
-.gold-word {
-  color: gold;
+.orange-word {
+  color: orange;
 }
 
 .red-word {
   color: #CC0000;
+}
+
+.heading {
+  text-align: center;
+  color: orange;
 }

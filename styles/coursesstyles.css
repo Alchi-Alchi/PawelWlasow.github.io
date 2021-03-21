@@ -6,7 +6,7 @@
 
 .nav-menu__wrapper {
   min-width: 20%;
-  border-right: 1px solid rgba(255, 255, 255, 0.3);;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .nav-menu {
@@ -38,12 +38,22 @@
   list-style-image: url(../courses_images/arrow.png);
 }
 
+.card-course__paragraph {
+  border-bottom: 3px solid rgba(255, 165, 0, 1);
+}
+
 .card-course__paragraph_icon {
+  text-align: justify;
+}
+
+.card-course__paragraph h2 {
   text-align: center;
 }
 
-.card-course__paragraph h3 {
-  text-align: center;
+.card-course__paragraph_image {
+  float: left;
+  width: 20%;
+  margin: 2%;
 }
 
 .rating-form {
@@ -56,6 +66,7 @@
 }
 
 .rating-form__group {
+  margin: auto;
   position: relative;
   width: 10em;
   height: 2em;
@@ -111,4 +122,30 @@
 .rating-form__star:nth-of-type(5) {
   z-index: 1;
   width: 10em;
+}
+
+.button-up {
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 20%;
+}
+
+.button-up__nav button {
+  margin-bottom: 2rem;
+  font-size: 36px;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.1;
+  outline: none;
+}
+
+.button-up__nav {
+  position: fixed;
+}
+
+.button-up__nav button:hover {
+  opacity: 1;
 }

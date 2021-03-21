@@ -6,70 +6,48 @@
   <title>О нас</title>
   <link rel="stylesheet" href="../styles/companystyles.css">
   <link rel="stylesheet" href="../generalStyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="shortcut icon" href="../general_images/icon.png">
 </head>
 <body>
   <div class="wrapper">
     <header>
-      <div class="cover">
-        <p>
-          <a href="../index.html"><img src="../images_1st_page/W.png" alt="logo" class="logo"></a> 
-          Школа английского языка "Winnfield" это уникальный профессиональный центр по изучению английского языка. Наши курсы проработаны со всей тщательностью и созданы командой настоящих профессионалов в области преподавания английского языка, которые неустанно работают над тем, чтобы усовершенствовать процесс обучения.
-        </p>
-      </div>
-      <div class="header">
-        <aside class="header-contacts">
-          <p>Контакты:</p>
-          <a href="tel:+375292868385" class="block">
-            <img src="../general_images/mts.png" alt="MTS" width="3%">
-            <img src="../general_images/viber.png" alt="viber" width="3%">
-            <span class="number">+375 29 286-83-85</span>
-          </a>
-          <a href="mailto:v.pavel.03@gmail.com" class="block">
-            <img src="../general_images/post.png" alt="gmail" width="3%">
-            <span class="mail">v.pavel.03@gmail.com</span>
-          </a>
-        </aside>
+      <div class="menu_and_search">
         <nav>
+          <img src="../general_images/W.png" alt="logo" id="logo">
           <ul class="menu">
-            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-            <li><a href="pages/company.html">О нас</a></li>
-            <li><a href="pages/courses.html" class="down">Услуги<span></span></a>
+            <li><a href="../index.html"><i class="fa fa-home" aria-hidden="true" id="home"></i></a></li>
+            <li><a href="company.html">О нас</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="advantages.html">Акции <span></span></a></li>
+            <li class="down"><a href="courses.html">Курсы<span></span></a>
               <ul class="submenu">
-                <li><a href="">Услуги переводчика</a></li>
-                <li><a href="">Индивидуальное обучение</a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
               </ul>
             </li>
-            <li class="down"><a href="pages/advantages.html">Акции <span></span></a>
-              <ul class="submenu">
-                <li><a href="">"Беспроцентная рассрочка"</a></li>
-                <li><a href="">"Больше балл-больше скидка"</a></li>
-                <li><a href="pages/">"Студенческая"</a></li>
-              </ul>
-            </li>
-            <li><a href="pages/teachers.html">Курсы</a></li>
-            <li><a href="pages/news.html">Новости</a></li>
-            <li><a href="pages/contacts.html">Контакты</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
-      <div class="search">
-      <form action="">
-        <label> 
-          <img src="" alt="search" width="3%">
-          <input type="text" placeholder="Поиск" class="search-window">
-        </label>
-      </form>
-      </div>
+        <div class="search">
+          <form>
+            <label> 
+              <input type="search" placeholder="Поиск" class="search__window">
+              <button type="submit" class="search__button"></button>
+            </label>
+          </form>
+        </div>
       </div>
     </header>
-  <div class="company_info"> 
-    <p>
-      Школа английского языка "Winnfield" это уникальный профессиональный центр по изучению английского языка. Наши курсы проработаны со всей тщательностью и созданы командой настоящих профессионалов в области преподавания английского языка, которые неустанно работают над тем, чтобы усовершенствовать процесс обучения. Наша методика обучения направлена на совершенствование четырёх основных языковых навыков: чтение, понимание на слух, разговорные и письменные навыки. Материал подходит для людей любого возраста и любого начального уровня.
-      </p>
-    </div>
-    <div class="list">
-      <h3 class="gold-word">Преимущества нашей школы:</h3>
-      <img src="../company-images/school-image.png" alt="#" class="advertising-image">
+  <div class="company-info">
+    <div class="company-info__text">
+      <h1 class="orange-word">Школа английского языка "Winnfield"</h1>
+      <p>Школа английского языка "Winnfield" это уникальный профессиональный центр по изучению английского языка. Наши курсы проработаны со всей тщательностью и созданы командой настоящих профессионалов в области преподавания английского языка, которые неустанно работают над тем, чтобы усовершенствовать процесс обучения. Наша методика обучения направлена на совершенствование четырёх основных языковых навыков: чтение, понимание на слух, разговорные и письменные навыки. Материал подходит для людей любого возраста и любого начального уровня.</p>
+      <img src="../company-images/school-image.png" alt="#" class="company-info__text_image">
+      <p>От других языковых школ нас отличает комплексный подход к обучению английскому языку и повышенное внимание к запросам учащихся. Наша школа появилась недавно, благодаря завязавшемуся в последние годы сотрудничеству с языковыми школами Великобритании и США, поэтому мы можем квалифицированно помочь учащимся в выборе подходящих образовательных программ за рубежом.</p>
+      <p>Запишитесь в школу английского языка "Winnfield" сейчас, и уже через полгода вы будете понимать носителей языка, бегло на нем изъясняться, общаться на бытовые темы. Спустя год занятий по нашей методике – сможете свободно чувствовать себя в путешествиях, смотреть фильмы и читать книги на языке оригинала, продвинуться по карьерной лестнице. Грамматика, лексика, понимание речи на слух, творческие задания – все это представлено в нашей уникальной методике.</p>
+      <h3 class="orange-word">Преимущества нашей школы:</h3>
       <ul class="advantages">
         <li>Обучение чтению, письму и общению на английском с англоязычными преподавателями</li>
         <li>Гибкая система скидок, а также возможность обучения в рассрочку</li>
@@ -77,19 +55,26 @@
         <li>Возможность обучения онлайн</li>
       </ul>
     </div>
+    <div class="certificate">
+      <h3 class="orange-word">Сертификат выпускника</h3>
+      <p>Наши программы разработаны в соответствии с Общеевропейской шкалой языковых компетенций (CEFR).</p>
+      <img src="../company-images/certificate.png" alt="example" class="certificate__image" title="certificate">
+      <p>Каждый выпускниик нашей школы, успешно закончивший курс, получает официальный сертификат установленного образца, который соответствует европейским стандартам по шкале CEFR.</p>
+    </div>
+  </div>
   <footer>
     <div class="about-us">
       <p>
-        <span class="gold-word">О нас:</span><br>
+        <span class="orange-word">О нас:</span><br>
         Частное предприятие Школа английского языка "Winnfield" <br>
         УНП 000 000 000 <br>
-        Режим работы: Пн-Пт 10.00-20.00 <br>
+        Режим работы: Пн-Сб 9.00-21.00 <br>
         &#169 Все права защищены
       </p>
     </div>
     <div class="contacts">
       <p>
-        <span class="gold-word">Контакты:</span> <br>
+        <span class="orange-word">Контакты:</span> <br>
         +375 29 286-83-85 <br>
         e-mail: v.pavel.03@gmail.com <br> <hr>
         <a href=""><img src="../general_images/vk.png" alt="vk" width="10%"></a>
@@ -98,14 +83,14 @@
     </div>
     <div class="campaigns">
       <p>
-        <span class="gold-word">Акции</span><br>
+        <span class="orange-word">Акции</span><br>
         <a href="">"Беспроцентная рассрочка"</a><br>
         <a href="">"Больше балл-больше скидка"</a><br>
         <a href="">"Студенческая"</a><br>
       </p> 
     </div>
     <div class="questions">
-      <a href="">Задать вопрос</a>
+      <a href=""><span class="orange-word">Задать вопрос</span></a>
     </div>
   </footer>
   </div>

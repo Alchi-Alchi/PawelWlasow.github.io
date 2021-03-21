@@ -1,7 +1,39 @@
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-wrapper__form {
+  margin: 1rem;
+  color: white;
+}
+
+.contact-wrapper__form_input {
+  position: relative;
+  margin: 1rem;
+  padding: 1rem;
+  outline: none;
+}
+
+.contact-wrapper__form_textarea {
+  margin: 1rem;
+  padding: 1rem;
+  outline: none;
+}
+
+.contact-wrapper__form_button {
+  margin: 1rem;
+  padding: 1rem 3rem;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #A01100;
+  color: white;
+}
+
 .contact_info {
   color: white;
   padding: 1rem;
   margin: 1rem;
-  border: 1px solid gold;
-  border-radius: 10px;
 }

@@ -12,49 +12,26 @@
 <body>
   <div class="wrapper">
     <header>
-      <div class="cover">
-        <p>
-          <a href="../index.html"><img src="../images_1st_page/W.png" alt="logo" class="logo"></a>
-          Territory of successful learning
-        </p>
-      </div>
-      <div class="header">
-        <aside class="header-contacts">
-          <p>Контакты:</p>
-          <a href="tel:+375292868385" class="block">
-            <img src="../general_images/mts.png" alt="MTS" width="3%">
-            <img src="../general_images/viber.png" alt="viber" width="3%">
-            <span class="number">+375 29 286-83-85</span>
-          </a>
-          <a href="mailto:v.pavel.03@gmail.com" class="block">
-            <img src="../general_images/post.png" alt="gmail" width="3%">
-            <span class="mail">v.pavel.03@gmail.com</span>
-          </a>
-        </aside>
+      <div class="menu_and_search">
         <nav>
+          <img src="../general_images/W.png" alt="logo" id="logo">
           <ul class="menu">
-            <li><a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="../index.html"><i class="fa fa-home" aria-hidden="true" id="home"></i></a></li>
             <li><a href="company.html">О нас</a></li>
-            <li><a href="services.html" class="down">Услуги<span></span></a>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="advantages.html">Акции <span></span></a></li>
+            <li class="down"><a href="courses.html">Курсы<span></span></a>
               <ul class="submenu">
-                <li><a href="">Услуги переводчика</a></li>
-                <li><a href="">Индивидуальное обучение</a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
               </ul>
             </li>
-            <li class="down"><a href="advantages.html">Акции <span></span></a>
-              <ul class="submenu">
-                <li><a href="">"Беспроцентная рассрочка"</a></li>
-                <li><a href="">"Больше балл-больше скидка"</a></li>
-                <li><a href="">"Студенческая"</a></li>
-              </ul>
-            </li>
-            <li><a href="courses.html">Курсы</a></li>
             <li><a href="news.html">Новости</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
         <div class="search">
-          <form action="">
+          <form>
             <label> 
               <input type="search" placeholder="Поиск" class="search__window">
               <button type="submit" class="search__button"></button>
@@ -63,44 +40,47 @@
         </div>
       </div>
     </header>
-    <div class="subscription">
-      <form>
-        <p class="subscription__title">Подписка</p>
-        <input type="text" placeholder="E-mail" class="subscription__input"><br>
-        <button class="subscription__button">Получать рассылку</button>
-      </form>
-    </div>
-  <div class="news-block"> 
-    <div class="news-block__item">
-      <h3>Выпускникам</h3>
-      <img src="../news_images/news1.jpg" alt="Выпуск" class="news-image">
-      <p>Мы поздравляем наших выпускников закончивших обучение по курсу "English academy" и приглашаем на торжественное вручение сертификатов, которое состоится 24.04.2021 в аудитории №3.</p>
-    </div>
-    <div class="news-block__item">
-      <h3>Внимание</h3>
-      <img src="../news_images/news2.png" alt="Выпуск" class="news-image">
-      <p></p>
-    </div>
-    <div class="news-block__item">
-      <h3>Индивидуальное обучение</h3>
-      <img src="../news_images/news3.png" alt="Выпуск" class="news-image">
-      <p></p>
-    </div>
-    <div class="news-block__item">
-      <h3>Подарочные сертификаты</h3>
-      <img src="../news_images/news4.png" alt="Выпуск" class="news-image">
-      <p>Подарочный сертификат от школы английского "Winnfield" — это подарок, который будет самым желанным для тех, кто хочет изучать английский, кто мечтает много путешествовать или даже получить продвижение по карьерной лестнице, ведь сегодня знание английского во многих случаях является необходимым условием для успешной карьеры.</p>
-    </div>
-    <div class="news-block__item">
-      <h3>Приглашение</h3>
-      <img src="../news_images/news5.png" alt="Выпуск" class="news-image">
-      <p></p>
-    </div>
+    <h1 class="heading">Новости</h1>
+    <div class="content-page">
+      <div class="news-block"> 
+        <div class="news-block__item">
+          <h3>Выпускникам</h3>
+          <img src="../news_images/news1.jpg" alt="Выпуск" class="news-image">
+          <p>Мы поздравляем наших выпускников закончивших обучение по курсу "English academy" и приглашаем на торжественное вручение сертификатов, которое состоится 24.04.2021 в аудитории №3.</p>
+        </div>
+        <div class="news-block__item">
+          <h3>Внимание</h3>
+          <img src="../news_images/news2.png" alt="Выпуск" class="news-image">
+          <p>В связи с возникшими трудностями связанными с подготовкой виз, принято решение о переносе поездки нашей группы в Лондон, которая была запланирована на 1 мая. Поездка перносится на 8 мая. О всех организационных вопросах мы известим Вас по телефону. Спасибо за понимание.</p>
+        </div>
+        <div class="news-block__item">
+          <h3>Индивидуальное обучение</h3>
+          <img src="../news_images/news3.png" alt="Выпуск" class="news-image">
+          <p>Рады сообщить, что с 1 апреля 2021 года в нашей школе доступна услуга индивидуального обучения. Индивидуальное обучение с персональным преподавателем позволяет изучать английский язык с в любое время, в любом месте и в максимально комфортных условиях. Возможно обучение онлайн. Выбирайте для себя максимально удобное расписание занятий. </p>
+        </div>
+        <div class="news-block__item">
+          <h3>Подарочные сертификаты</h3>
+          <img src="../news_images/news4.png" alt="Выпуск" class="news-image">
+          <p>Подарочный сертификат от школы английского "Winnfield" — это подарок, который будет самым желанным для тех, кто хочет изучать английский, кто мечтает много путешествовать или даже получить продвижение по карьерной лестнице, ведь сегодня знание английского во многих случаях является необходимым условием для успешной карьеры.</p>
+        </div>
+        <div class="news-block__item">
+          <h3>Приглашение</h3>
+          <img src="../news_images/news5.png" alt="Выпуск" class="news-image">
+          <p></p>
+        </div>
+      </div>
+      <div class="subscription">
+        <form class="subscription__form">
+          <p class="subscription__title orange-word">Подписка</p>
+          <input type="text" placeholder="E-mail" class="subscription__input"><br>
+          <button class="subscription__button">Получать рассылку</button>
+        </form>
+      </div>
     </div>
   <footer>
     <div class="about-us">
       <p>
-        <span class="gold-word">О нас:</span><br>
+        <span class="orange-word">О нас:</span><br>
         Частное предприятие Школа английского языка "Winnfield" <br>
         УНП 000 000 000 <br>
         Режим работы: Пн-Пт 10.00-20.00 <br>
@@ -109,7 +89,7 @@
     </div>
     <div class="contacts">
       <p>
-        <span class="gold-word">Контакты:</span> <br>
+        <span class="orange-word">Контакты:</span> <br>
         +375 29 286-83-85 <br>
         e-mail: v.pavel.03@gmail.com <br> <hr>
         <a href=""><img src="../general_images/vk.png" alt="vk" width="10%"></a>
@@ -118,14 +98,14 @@
     </div>
     <div class="campaigns">
       <p>
-        <span class="gold-word">Акции</span><br>
+        <span class="orange-word">Акции</span><br>
         <a href="">"Беспроцентная рассрочка"</a><br>
         <a href="">"Больше балл-больше скидка"</a><br>
         <a href="">"Студенческая"</a><br>
       </p> 
     </div>
     <div class="questions">
-      <a href=""> <span class="gold-word">Задать вопрос</span></a>
+      <a href=""> <span class="orange-word">Задать вопрос</span></a>
     </div>
   </footer>
   </div>

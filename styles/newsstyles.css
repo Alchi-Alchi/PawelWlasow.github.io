@@ -1,3 +1,7 @@
+.content-page {
+  display: flex;
+}
+
 .news-block {
   display: flex;
   justify-content: center;
@@ -5,26 +9,33 @@
 }
 
 .news-block__item {
-  width: 20%;
-  margin: 1rem;
+  width: 25%;
+  margin: 1%;
   color: white;
-  padding: 1rem;
+  padding: 1%;
+  background-color: #2C303A;
 }
 
 .news-block__item:hover {
-  background-color: #383838;
-  box-shadow: 0 0 3px 0 rgb(153, 149, 149);
+  box-shadow: 3px 3px 3px 3px rgba(19, 20, 23, 1);
 }
 
 .news-image {
-  width: 50%;
-  float: left;
-  margin: 1em;
+  
+  width: 100%;
+  margin: auto;
 }
 
 .subscription {
+  width: 20%;
+  height: inherit;
   padding: 1rem;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.subscription__form {
+  position: sticky;
+  top: 0;
 }
 
 .subscription__title {
@@ -38,6 +49,7 @@
   padding: 1rem;
   border: none;
   border-radius: 10px;
+  outline: none;
 }
 
 .subscription__button {
@@ -47,6 +59,8 @@
   font-size: 18px;
   background: #A01100;
   color: white;
+  outline: none;
+  cursor: pointer;
 }
 
 .subscription__button:hover {
