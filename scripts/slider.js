@@ -1,5 +1,7 @@
 var sliderIndex = 0;
-function scrollSlides() {
+carousel();
+
+function carousel() {
   var i;
   var items = document.getElementsByClassName("item");
   var dots = document.getElementsByClassName("dot");
@@ -13,5 +15,5 @@ function scrollSlides() {
 }
   items[sliderIndex-1].style.display = "block";
   dots[sliderIndex-1].className += " active";
-  setTimeout (scrollSlides, 3000);
+  setTimeout (carousel, 3000);
 }

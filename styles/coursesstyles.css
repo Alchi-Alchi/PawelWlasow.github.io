@@ -35,7 +35,7 @@
 }
 
 .course-content ul {
-  list-style-image: url(../courses_images/arrow.png);
+  list-style-image: url(../courses-images/arrow.png);
 }
 
 .card-course__paragraph {
@@ -54,6 +54,11 @@
   float: left;
   width: 20%;
   margin: 2%;
+  transition: transform .3s;
+}
+
+.card-course__paragraph_image:hover {
+  transform: scale(1.2);
 }
 
 .rating-form {
@@ -71,7 +76,7 @@
   width: 10em;
   height: 2em;
   background-size: 2em auto;
-  background-image: url(../courses_images/off.svg);
+  background-image: url(../courses-images/off.svg);
 }
 
 .rating-form__star {
@@ -92,11 +97,11 @@
 }
 
 .rating-form__star:checked, .rating-form__star:hover {
-  background-image: url(../courses_images/on.svg);
+  background-image: url(../courses-images/on.svg);
 }
 
 .rating-form__star:hover ~ .rating-form__star {
-  background-image: url(../courses_images/off.svg);
+  background-image: url(../courses-images/off.svg);
 }
 
 .rating-form__star:nth-of-type(1) {

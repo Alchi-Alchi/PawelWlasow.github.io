@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background-color: #1E1F26;
@@ -192,7 +196,12 @@ footer {
   }
 }
 
-.about-us, .contacts, .campaigns, .questions {
+.footer__payment_item {
+  margin: 3px;
+  width: 5%;
+}
+
+.about-us, .contacts, .campaigns, .questions, .footer__payment {
   margin: auto;
 }
 
@@ -205,6 +214,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100vh;
 }
 
 .orange-word {

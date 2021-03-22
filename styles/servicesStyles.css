@@ -1,0 +1,16 @@
+.service-wrapper {
+  display: flex;
+}
+
+.translate-service {
+  
+}
+
+.translate-service__text {
+  padding: 1em;
+  color: white;
+}
+
+.translate-service__img {
+
+}
