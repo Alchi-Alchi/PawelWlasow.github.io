@@ -5,6 +5,12 @@
   width: 90%;
 }
 
+@media (max-width:900px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+}
+
 .contact-wrapper__form fieldset {
   display: flex;
   flex-direction: column;
@@ -72,12 +78,13 @@
 
 .phone {
   width: 90%;
-  margin: 1% 2%;
+  margin: 1% auto;
 }
 
 .phone__img {
   position: relative;
   display: block;
+  margin: 1% auto;
 }
 
 .phone__img:hover {
@@ -95,6 +102,9 @@
     }
   }
 
+.phone__title {
+  text-align: center;
+}
 .source {
   color: white;
   text-decoration: none;

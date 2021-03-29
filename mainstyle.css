@@ -44,6 +44,18 @@
   animation: slidy 5s;
 }
 
+@keyframes slidy {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
 .slider-content__item_field {
   position: absolute;
   top: 0;
@@ -76,18 +88,6 @@
   width: 100%;
   z-index: 1;
   vertical-align: middle;
-}
-
-@keyframes slidy {
-  0% {
-    left: -100%;
-  }
-  50% {
-    left: 0;
-  }
-  100% {
-    left: 100%;
-  }
 }
 
 .dots-container {

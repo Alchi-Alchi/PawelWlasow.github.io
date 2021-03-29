@@ -185,14 +185,6 @@ footer {
   box-shadow: 0 1px 3px 3px rgba(44, 48, 58, 1);
 }
 
-.bus {
-  position: absolute;
-  right: 0;
-  top: -40%;
-  transition: all .3s linear;
-  animation: moveLeft 3s;
-}
-
 @media (max-width:900px) {
   footer {
     display: block;
