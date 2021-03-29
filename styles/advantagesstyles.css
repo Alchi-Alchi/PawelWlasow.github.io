@@ -1,17 +1,37 @@
-.card-course_wrapper {
+.offers {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: 1em;
 }
 
-.card-course {
+.offers__item {
+  position: relative;
   margin: 1%;
-  max-width: 600px;
+  animation: showLeft 1.5s;
 }
 
-.card-course:hover {
-  box-shadow: 3px 3px 3px 3px rgba(19, 20, 23, 1);;
+@keyframes showLeft {
+  from {
+    left: -100%;
+    opacity: 0.1;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
 }
 
-.card-course__offer {
-  margin: auto;
+.offers__item_img {
+  width: 100%;
+}
+
+.offers__item_text {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  padding: 1rem;
+  font-size: 24px;
+  color: white;
+  background: rgba(255, 140, 0, 0.8);
 }

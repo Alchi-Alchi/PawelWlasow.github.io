@@ -39,15 +39,11 @@
 }
 
 .card-course__paragraph {
-  border-bottom: 3px solid rgba(255, 165, 0, 1);
+  border-bottom: 1px solid rgba(255, 140, 0, 1);
 }
 
 .card-course__paragraph_icon {
   text-align: justify;
-}
-
-.card-course__paragraph h2 {
-  text-align: center;
 }
 
 .card-course__paragraph_image {
@@ -58,7 +54,7 @@
 }
 
 .card-course__paragraph_image:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .rating-form {
@@ -153,4 +149,9 @@
 
 .button-up__nav button:hover {
   opacity: 1;
+}
+
+.fa-clock-o, .fa-calendar, .fa-money {
+  margin: 1em;
+  color: darkorange;
 }

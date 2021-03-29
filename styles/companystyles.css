@@ -17,12 +17,13 @@
 }
 
 .certificate {
-  text-align: center;
+  text-align: justify;
 }
 
 .certificate__image {
   width: 40%;
   margin: 1rem;
+  float: right;
 }
 
 .advantages {

@@ -35,13 +35,6 @@ header {
   background-color: #111111;
 }
 
-/* .slider-content  {
-  padding-bottom: 25%;
-  background-image: url(images_1st_page/background.jpg);
-  background-size: cover;
-} */
-
-
 .block {
   display: flex;
   align-items: center;
@@ -80,9 +73,9 @@ nav a {
   backface-visibility: hidden;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1250px) {
   .menu {
-    display: block;
+    flex-direction: column;
   }
 }
 
@@ -94,7 +87,7 @@ nav a {
 }
 
 .menu li a:hover {
-  color: orange;
+  color: darkorange;
 }
 
 .submenu {
@@ -183,11 +176,21 @@ form {
 
 footer {
   display: flex;
+  justify-content: space-between;
+  position: relative;
   color: white;
   background-color: #111111;
   padding: 1%;
   width: 100%;
   box-shadow: 0 1px 3px 3px rgba(44, 48, 58, 1);
+}
+
+.bus {
+  position: absolute;
+  right: 0;
+  top: -40%;
+  transition: all .3s linear;
+  animation: moveLeft 3s;
 }
 
 @media (max-width:900px) {
@@ -198,11 +201,14 @@ footer {
 
 .footer__payment_item {
   margin: 3px;
-  width: 5%;
+  width: 10%;
 }
 
 .about-us, .contacts, .campaigns, .questions, .footer__payment {
-  margin: auto;
+  width: 25%;
+  margin: 0 1em;
+  text-align: justify;
+  line-height: 3vh;
 }
 
 .questions a, .campaigns a, .block {
@@ -218,14 +224,14 @@ footer {
 }
 
 .orange-word {
-  color: orange;
+  color: darkorange;
 }
 
-.red-word {
-  color: #CC0000;
+.blue-word {
+  color: rgba(39, 92, 220, 1);
 }
 
 .heading {
   text-align: center;
-  color: orange;
+  color: darkorange;
 }

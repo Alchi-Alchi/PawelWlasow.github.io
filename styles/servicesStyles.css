@@ -1,16 +1,35 @@
-.service-wrapper {
+.services {
   display: flex;
+  justify-content: center;
 }
 
-.translate-service {
-  
+@media (max-width:1080px) {
+  .services {
+    flex-direction: column;
+  }
 }
 
-.translate-service__text {
+.services__item {
+  width: 30%;
+  margin: 1%;
+}
+
+.services__text {
   padding: 1em;
   color: white;
 }
 
-.translate-service__img {
+.services__image {
+  overflow: hidden;
+}
 
+.services__img {
+  display: block;
+  width: 100%;
+  transition: all 1s ease;
+  overflow: hidden;
+}
+
+.services__img:hover {
+  transform: scale(1.2);
 }
