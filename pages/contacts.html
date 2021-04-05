@@ -15,20 +15,15 @@
     <header>
       <div class="menu_and_search">
         <nav>
-          <img src="../general_images/W.png" alt="logo" id="logo">
+          <a href="../index.html" id="logo"><img src="../general_images/W.png" alt="logo"></a>
           <ul class="menu">
             <li><a href="../index.html"><i class="fa fa-home" aria-hidden="true" id="home"></i></a></li>
-            <li><a href="company.html" id="aboutUs" onmouseover="translateAboutUs1 (this,'About us')" onmouseout="translateAboutUs2 (this, 'О нас')">О нас</a></li>
-            <li><a href="services.html" id="services" onmouseover="translateServices1 (this,'Services')" onmouseout="translateServices2 (this, 'Услуги')">Услуги</a></li>
-            <li><a href="advantages.html" id="promotions" onmouseover="translatePromotions1 (this,'Promotions')" onmouseout="translatePromotions2 (this, 'Акции')">Акции <span></span></a></li>
-            <li class="down"><a href="courses.html" id="courses" onmouseover="translateCourses1 (this,'Courses')" onmouseout="translateCourses2 (this, 'Курсы')">Курсы<span></span></a>
-              <ul class="submenu">
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-              </ul>
-            </li>
-            <li><a href="news.html" id="news" onmouseover="translateNews1 (this,'News')" onmouseout="translateNews2 (this, 'Новости')">Новости</a></li>
-            <li><a href="contacts.html" id="contacts" onmouseover="translateContacts1 (this,'Contacts')" onmouseout="translateContacts2 (this, 'Контакты')">Контакты</a></li>
+            <li><a href="company.html" onmouseover="translateTextToEng (this,'About us')" onmouseout="translateTextToRus (this, 'О нас')">О нас</a></li>
+            <li><a href="services.html" onmouseover="translateTextToEng (this,'Services')" onmouseout="translateTextToRus (this, 'Услуги')">Услуги</a></li>
+            <li><a href="promotions.html" onmouseover="translateTextToEng (this,'Promotions')" onmouseout="translateTextToRus (this, 'Акции')">Акции</a></li>
+            <li><a href="courses.html" onmouseover="translateTextToEng (this,'Courses')" onmouseout="translateTextToRus (this, 'Курсы')">Курсы</a></li>
+            <li><a href="news.html" onmouseover="translateTextToEng (this,'News')" onmouseout="translateTextToRus (this, 'Новости')">Новости</a></li>
+            <li><a href="contacts.html"onmouseover="translateTextToEng (this,'Contacts')" onmouseout="translateTextToRus (this, 'Контакты')">Контакты</a></li>
           </ul>
         </nav>
         <div class="search">
@@ -44,12 +39,12 @@
     <div class="contact-wrapper">
       <div class="contact_info"> 
         <p>
-          <span class="orange-word">О нас:</span><br>
+          <span class="orange-word">О нас:/About us</span><br>
           Частное предприятие Школа английского языка "Winnfield" <br>
           УНП 000 000 000 <br>
           Режим работы: Пн-Сб 9.00-21.00
         </p>
-          <span class="orange-word">Наши контакты:</span><br>
+          <span class="orange-word">Наши контакты:/Our contacts</span><br>
           <div class="header-contacts">
             <a href="tel:+375292868385" class="block">
               <img src="../contacts-images/mts.png" alt="MTS" width="3%">
@@ -73,18 +68,18 @@
           <i class="fa fa-user" aria-hidden="true"></i>
           <input type="text" placeholder="*Имя" class="contact-wrapper__form_input" required><br>
           <i class="fa fa-envelope" aria-hidden="true"></i>
-          <input type="text" placeholder="E-mail" class="contact-wrapper__form_input"><br>
+          <input type="email" placeholder="E-mail" class="contact-wrapper__form_input"><br>
           <i class="fa fa-phone-square" aria-hidden="true"></i>
           <input type="text" placeholder="*Телефон" class="contact-wrapper__form_input" required><br>
           <textarea name="" id="" cols="30" rows="10" placeholder="Примечания" class="contact-wrapper__form_textarea"></textarea><br>
-          <p><input type="checkbox">Я согласен на обработку персональных данных</p>
+          <p><input type="checkbox" required>Я согласен на обработку персональных данных</p>
           <button type="submit" class="contact-wrapper__form_button">Отправить</button>
         </fieldset>
       </div>
     </div>
     <div class="phone">
-      <h2 class="phone__title orange-word">Позвоните нам<br></h2>
-      <img src="../contacts-images/phone.png" alt="" class="phone__img">
+      <h2 class="phone__title orange-word">Остались вопросы? Позвоните нам<br></h2>
+      <div class="pulse"><img src="../contacts-images/phone.png" alt="" class="phone__img"></div>
     </div>
     <footer>
       <div class="about-us">

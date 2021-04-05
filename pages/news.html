@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../generalStyle.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="shortcut icon" href="../general_images/icon.png">
+  <script src="../scripts/translateText.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -17,17 +18,12 @@
           <img src="../general_images/W.png" alt="logo" id="logo">
           <ul class="menu">
             <li><a href="../index.html"><i class="fa fa-home" aria-hidden="true" id="home"></i></a></li>
-            <li><a href="company.html">О нас</a></li>
-            <li><a href="services.html">Услуги</a></li>
-            <li><a href="advantages.html">Акции <span></span></a></li>
-            <li class="down"><a href="courses.html">Курсы<span></span></a>
-              <ul class="submenu">
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-              </ul>
-            </li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="company.html" id="aboutUs" onmouseover="translateAboutUs1 (this,'About us')" onmouseout="translateAboutUs2 (this, 'О нас')">О нас</a></li>
+            <li><a href="services.html" id="services" onmouseover="translateServices1 (this,'Services')" onmouseout="translateServices2 (this, 'Услуги')">Услуги</a></li>
+            <li><a href="advantages.html" id="promotions" onmouseover="translatePromotions1 (this,'Promotions')" onmouseout="translatePromotions2 (this, 'Акции')">Акции <span></span></a></li>
+            <li><a href="courses.html" id="courses" onmouseover="translateCourses1 (this,'Courses')" onmouseout="translateCourses2 (this, 'Курсы')">Курсы<span></span></a></li>
+            <li><a href="news.html" id="news" onmouseover="translateNews1 (this,'News')" onmouseout="translateNews2 (this, 'Новости')">Новости</a></li>
+            <li><a href="contacts.html" id="contacts" onmouseover="translateContacts1 (this,'Contacts')" onmouseout="translateContacts2 (this, 'Контакты')">Контакты</a></li>
           </ul>
         </nav>
         <div class="search">
@@ -44,70 +40,98 @@
     <div class="content-page">
       <div class="news-block"> 
         <div class="news-block__item">
-          <h3>Выпускникам</h3>
           <img src="../news_images/news1.jpg" alt="Выпуск" class="news-image">
-          <p>Мы поздравляем наших выпускников закончивших обучение по курсу "English academy" и приглашаем на торжественное вручение сертификатов, которое состоится 24.04.2021 в аудитории №3.</p>
+          <h3 class="orange-word">Выпускникам</h3>
+          <p>Мы поздравляем наших выпускников закончивших обучение по курсу "English academy" и приглашаем на торжественное вручение сертификатов, которое состоится в субботу 24.04.2021 в 17.00 в аудитории №3.</p>
+          <div class="news-block__item_date">
+            <p><i class="fa fa-eye" aria-hidden="true"></i>By Admin 21.04.2021</p>
+          </div>
         </div>
         <div class="news-block__item">
-          <h3>Внимание</h3>
-          <img src="../news_images/news2.png" alt="Выпуск" class="news-image">
+          <img src="../news_images/news2.jpg" alt="Лондон" class="news-image">
+          <h3 class="orange-word">Внимание</h3>
           <p>В связи с возникшими трудностями связанными с подготовкой виз, принято решение о переносе поездки нашей группы в Лондон, которая была запланирована на 1 мая. Поездка перносится на 8 мая. О всех организационных вопросах мы известим Вас по телефону. Спасибо за понимание.</p>
+          <div class="news-block__item_date">
+            <p><i class="fa fa-eye" aria-hidden="true"></i>By Admin 16.04.2021</p>
+          </div>
         </div>
         <div class="news-block__item">
-          <h3>Индивидуальное обучение</h3>
-          <img src="../news_images/news3.png" alt="Выпуск" class="news-image">
+          <img src="../news_images/news3.jpg" alt="Индивидуальное обучение" class="news-image">
+          <h3 class="orange-word">Индивидуальное обучение</h3>
           <p>Рады сообщить, что с 1 апреля 2021 года в нашей школе доступна услуга индивидуального обучения. Индивидуальное обучение с персональным преподавателем позволяет изучать английский язык с в любое время, в любом месте и в максимально комфортных условиях. Возможно обучение онлайн. Выбирайте для себя максимально удобное расписание занятий. </p>
+          <div class="news-block__item_date">
+            <p><i class="fa fa-eye" aria-hidden="true"></i>By Admin 01.04.2021</p>
+          </div>
         </div>
         <div class="news-block__item">
-          <h3>Подарочные сертификаты</h3>
-          <img src="../news_images/news4.png" alt="Выпуск" class="news-image">
+          <img src="../news_images/news4.jpg" alt="сертификаты" class="news-image">
+          <h3 class="orange-word">Подарочные сертификаты</h3>
           <p>Подарочный сертификат от школы английского "Winnfield" — это подарок, который будет самым желанным для тех, кто хочет изучать английский, кто мечтает много путешествовать или даже получить продвижение по карьерной лестнице, ведь сегодня знание английского во многих случаях является необходимым условием для успешной карьеры.</p>
+          <div class="news-block__item_date">
+            <p><i class="fa fa-eye" aria-hidden="true"></i>By Admin 28.03.2021</p>
+          </div>
         </div>
         <div class="news-block__item">
-          <h3>Приглашение</h3>
-          <img src="../news_images/news5.png" alt="Выпуск" class="news-image">
-          <p></p>
+          <img src="../news_images/news5.jpg" alt="Приглашение" class="news-image">
+          <h3 class="orange-word">Приглашение</h3>
+          <p>Приглашаем Вас на еженедельную субботнюю встречу клуба "Five o'clock tea". В эту субботу </p>
+          <div class="news-block__item_date">
+            <p><i class="fa fa-eye" aria-hidden="true"></i>By Admin 25.03.2021</p>
+          </div>
+        </div>
+        <div class="news-block__item">
+          <img src="../news_images/news6.jpg" alt="Розыгрыш" class="news-image">
+          <h3 class="orange-word">Розыгрыш</h3>
+          <p>Для того, чтобы принять участие в конкурсе, запишись до лета на любой курс английского языка и по окончании обучения получи возможность выиграть путешествие в Лондон. 10 студентов показавших наилучший результат отправятся в 3-ёх дневное путешествие в столицу Великобритании.Требования к участникам конкурса: возраст от 18 лет, знание английского языка не ниже уровня intermediate.</p>
+          <div class="news-block__item_date">
+            <p><i class="fa fa-eye" aria-hidden="true"></i>By Admin 01.03.2021</p>
+          </div>
         </div>
       </div>
-      <div class="subscription">
-        <form class="subscription__form">
-          <p class="subscription__title orange-word">Подписка</p>
-          <input type="text" placeholder="E-mail" class="subscription__input"><br>
-          <button class="subscription__button">Получать рассылку</button>
-        </form>
+    </div>
+    <div class="subscription">
+      <div class="subscription__dark-layer"></div>
+      <div class="subscription__text-content"><p>Подпишись на рассылку, чтобы первым узнавать о наших акциях, скидках и важных событиях.</p></div>
+      <form class="subscription__form">
+        <p class="subscription__title">Подписка</p>
+        <input type="text" placeholder="E-mail" class="subscription__input" required><br>
+        <button class="subscription__button">Получать рассылку</button>
+      </form>
+    </div>
+    <footer>
+      <div class="about-us">
+        <p>
+          <span class="orange-word">О нас:</span><br>
+          Частное предприятие Школа английского языка "Winnfield"<br>
+          УНП 000 000 000 <br>
+          Режим работы: Пн-Сб 9.00-21.00 <br>
+          &#169 Все права защищены
+         </p>
       </div>
-    </div>
-  <footer>
-    <div class="about-us">
-      <p>
-        <span class="orange-word">О нас:</span><br>
-        Частное предприятие Школа английского языка "Winnfield" <br>
-        УНП 000 000 000 <br>
-        Режим работы: Пн-Пт 10.00-20.00 <br>
-        &#169 Все права защищены
-      </p>
-    </div>
-    <div class="contacts">
-      <p>
-        <span class="orange-word">Контакты:</span> <br>
-        +375 29 286-83-85 <br>
-        e-mail: v.pavel.03@gmail.com <br> <hr>
-        <a href=""><img src="../general_images/vk.png" alt="vk" width="10%"></a>
-        <a href=""><img src="../general_images/tg.png" alt="telegram" width="10%"></a>
-      </p>
-    </div>
-    <div class="campaigns">
-      <p>
-        <span class="orange-word">Акции</span><br>
-        <a href="">"Беспроцентная рассрочка"</a><br>
-        <a href="">"Больше балл-больше скидка"</a><br>
-        <a href="">"Студенческая"</a><br>
-      </p> 
-    </div>
-    <div class="questions">
-      <a href=""> <span class="orange-word">Задать вопрос</span></a>
-    </div>
-  </footer>
+      <div class="contacts">
+        <p>
+          <span class="orange-word">Контакты:</span> <br>
+          Телефон: +375 29 286-83-85 <br>
+          e-mail: v.pavel.03@gmail.com<br> 
+          <a href=""><img src="../general_images/vk.png" alt="vk" width="10%"></a>
+          <a href=""><img src="../general_images/tg.png" alt="telegram" width="10%"></a>
+        </p>
+      </div>
+      <div class="footer__payment">
+        <p class="orange-word">
+          Принимаем следующие формы оплаты:<br>
+          <img src="../general_images/visa.png" alt="visa" class="footer__payment_item">
+          <img src="../general_images/mastercard.png" alt="mastercard" class="footer__payment_item">
+          <img src="../general_images/pay.png" alt="apple-pay" class="footer__payment_item">
+          <img src="../general_images/paypal.png" alt="paypal" class="footer__payment_item">
+          <img src="../general_images/webmoney.png" alt="webmoney" class="footer__payment_item">
+          <img src="../general_images/bepaid.png" alt="bepaid" class="footer__payment_item">
+        </p>
+      </div>
+      <div class="questions">
+        <p><a href=""><span class="orange-word">Задать вопрос</span></a></p>
+      </div>
+    </footer>
   </div>
 </body> 
 </html>

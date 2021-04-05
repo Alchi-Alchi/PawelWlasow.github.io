@@ -9,26 +9,22 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="shortcut icon" href="general_images/icon.png">
   <script defer src="scripts/slider.js"></script>
+  <script src="scripts/translateText.js"></script>
 </head>
 <body>
   <div class="wrapper">
     <header>
       <div class="menu_and_search">
         <nav>
-          <img src="general_images/W.png" alt="logo" id="logo">
+          <a href="index.html" id="logo"><img src="general_images/W.png" alt="logo"></a>
           <ul class="menu">
             <li><a href="index.html"><i class="fa fa-home" aria-hidden="true" id="home"></i></a></li>
-            <li><a href="pages/company.html">О нас</a></li>
-            <li><a href="pages/services.html">Услуги</a></li>
-            <li><a href="pages/advantages.html">Акции <span></span></a></li>
-            <li class="down"><a href="pages/courses.html">Курсы<span></span></a>
-              <ul class="submenu">
-                <li><a href="">Курсы английского для детей</a></li>
-                <li><a href="">Курсы английского для взрослых</a></li>
-              </ul>
-            </li>
-            <li><a href="pages/news.html">Новости</a></li>
-            <li><a href="pages/contacts.html">Контакты</a></li>
+            <li><a href="pages/company.html" onmouseover="translateTextToEng (this,'About us')" onmouseout="translateTextToRus (this, 'О нас')">О нас</a></li>
+            <li><a href="pages/services.html" onmouseover="translateTextToEng (this,'Services')" onmouseout="translateTextToRus (this, 'Услуги')">Услуги</a></li>
+            <li><a href="pages/promotions.html" onmouseover="translateTextToEng (this,'Promotions')" onmouseout="translateTextToRus (this, 'Акции')">Акции</a></li>
+            <li><a href="pages/courses.html" onmouseover="translateTextToEng (this,'Courses')" onmouseout="translateTextToRus (this, 'Курсы')">Курсы</a></li>
+            <li><a href="pages/news.html" onmouseover="translateTextToEng (this,'News')" onmouseout="translateTextToRus (this, 'Новости')">Новости</a></li>
+            <li><a href="pages/contacts.html"onmouseover="translateTextToEng (this,'Contacts')" onmouseout="translateTextToRus (this, 'Контакты')">Контакты</a></li>
           </ul>
         </nav>
         <div class="search">
@@ -41,22 +37,18 @@
         </div>
       </div>
     </header>
+    <div class="sign-up">
+      <label class="orange-word">Оставить заявку</label>
+        <input type="text" placeholder="Имя" class="sign-up__input">
+        <input type="text" placeholder="Телефон или e-mail" class="sign-up__input">
+      <a href=""><button class="sign-up__button">Записаться</button></a>
+    </div>
     <div class="slider-content">
       <div class="item">
         <div class="slider-content__item_field"></div>
-        <figcaption class="slider-content__item_text">
-          <p>
-          Школа английскго языка<br>
-          <span class="name">"Winnfield"</span><br>
-          Territory of successful learning
-          </p>
+        <div class="slider-content__item_text">
+          <p>Школа английскго языка<br><span class="name">"Winnfield"</span><br>Territory of successful learning</p>
           <p>Запишитесь на бесплатный урок! <br> На первом занятии тебя ждёт личное знакомство с преподавателем, а также бесплатное письменное и устное тестирование.</p>
-        </figcaption>
-        <div class="sign-up">
-          <label class="orange-word">Оставить заявку</label>
-            <input type="text" placeholder="Имя" class="sign-up__input">
-            <input type="text" placeholder="Телефон или e-mail" class="sign-up__input">
-          <a href=""><button class="sign-up__button">Записаться</button></a>
         </div>
         <img src="images_1st_page/background1.jpg" alt="slide1" title="" class="slider-image">
       </div>
@@ -65,33 +57,12 @@
         <div class="slider-content__item_text">
           <p>Курсы английского для детей!<br></p>
         </div>
-        <div class="sign-up">
-          <label class="orange-word">Оставить заявку</label>
-            <input type="text" placeholder="Имя" class="sign-up__input">
-            <input type="text" placeholder="Телефон или e-mail" class="sign-up__input">
-          <a href=""><button class="sign-up__button">Записаться</button></a>
-        </div>
         <img src="images_1st_page/background2.jpg" alt="slide1" title="" class="slider-image">
       </div>
       <div class="item">
         <div class="slider-content__item_field"></div>
         <div class="slider-content__item_text">
-          <p>Курсы английского для взрослых!<br>
-            <ul>
-              <li>Английский для поступающих</li>
-              <li>Курсы разговорного английского</li>
-              <li>Английский онлайн</li>
-              <li>Английский с нуля</li>
-              <li>Английский для бизнеса</li>
-              <li>Английский для IT</li>
-            </ul>
-          </p>
-        </div>
-        <div class="sign-up">
-          <label class="orange-word">Оставить заявку</label>
-            <input type="text" placeholder="Имя" class="sign-up__input">
-            <input type="text" placeholder="Телефон или e-mail" class="sign-up__input">
-          <a href=""><button class="sign-up__button">Записаться</button></a>
+          <p></p>
         </div>
         <img src="images_1st_page/background3.jpg" alt="slide3" title="" class="slider-image">
       </div>
@@ -101,31 +72,45 @@
       <span class="dot"></span> 
       <span class="dot"></span> 
     </div>
-    <p class="heading">В нашей школе английского языка, мы поможем Вам в подготовке для сдачи самых популярных тестов по английскому языку. Программы подготовки к экзаменам в нашей школе учитывают особенности и тонкости того или иного теста, а также включают в себя работу со всеми аспектами языка. Кроме того, мы помогаем своим клиентам при регистрации на экзамены.</p>
-    <div class="exams">
-      <div class="exams__item">
-        <img src="images_1st_page/toefl.png" alt="" class="exams__item_img">
-        <p class="exams__item_text">TOEFL (Test of English as a Foreign Language) – самый распространенный и наиболее признаваемый в мире экзамен по английскому языку, необходимый для учебы, трудоустройства, программ студенческого обмена и других целей. Результаты теста признаются более чем 10 тысячами колледжей и университетов в 150 странах мира, включая США, Канаду, Австралию и Новую Зеландию.</p>
-      </div>
-      <div class="exams__item">
-        <img src="images_1st_page/ielts.png" alt="" class="exams__item_img">
-        <p class="exams__item_text">Экзамен IELTS признают большинство нанимателей и англоязычных университетов Европы, Австралии, Новой Зеландии и Канады. Существует две версии экзамена: выезжающие на ПМЖ сдают General Module, поступающие в вуз или аспирантуру – Academic Module, разделенный по отраслям: А – физика, инженерные науки; В – биология, медицина; С – гуманитарные науки.</p>
-      </div>
-      <div class="exams__item">
-        <img src="images_1st_page/cae.png" alt="" class="exams__item_img">
-        <p class="exams__item_text">CAE (Certificate in advanced English). Срок действия сертификата не ограничен. Сертификат признаётся многими работодателями и рядом университетов в Великобритании. Кроме того, сертификат признается Британской пограничной службой (UKBA) как удостоверяющий достаточное знание английского языка при подаче документов на иммиграционную визу.</p>
-      </div>
-      <div class="exams__item">
-        <img src="images_1st_page/FCE.png" alt="" class="exams__item_img">
-        <p class="exams__item_text">Экзамен FCE может подойти для летних курсов или foundation year (программы подготовки перед бакалавриатом для иностранных студентов). Официально рекомендуется тем, кто владеет письменным и разговорным английским на уровне Upper Intermediate (пороговый продвинутый уровень) Для бакалавриата или магистратуры такого сертификата недостаточно.</p>
-      </div>
-      <div class="exams__item">
-        <img src="images_1st_page/CPE.png" alt="" class="exams__item_img">
-        <p class="exams__item_text">CPE (Certificate of Proficiency in English). Старейший из кембриджских языковых экзаменов. Сертификат соответствует уровню C2 Шкалы Совета Европы и является экзаменом, подтверждающим наивысший уровень владения английским языком. Срок действия сертификата неограничен.</p>
-      </div>
-      <div class="exams__item">
-        <img src="images_1st_page/BEC.png" alt="" class="exams__item_img">
-        <p class="exams__item_text">Business English Certificate (BEC) — экзамены Кембриджского университета, разработанные для сертификации навыков владения деловым английским языком и умения общаться в сфере международного бизнеса. Экзамены ВЕС существуют на 3 уровнях: BEC Preliminary, BEC Vantage, BEC Higher.</p>
+    <div class="exams-content">
+      <p class="exams-content__text">В нашей школе английского языка, мы поможем Вам в подготовке для сдачи самых популярных тестов по английскому языку. <br>Программы подготовки к экзаменам в нашей школе учитывают особенности и тонкости того или иного теста, а также включают в себя работу со всеми аспектами языка. Кроме того, мы помогаем своим клиентам при регистрации на экзамены.</p>
+      <div class="exams">
+        <input type="radio" id="tab1" name="tabs" checked>
+        <label for="tab1" class="tab-title">TOEFL</label>
+        <input type="radio" id="tab2" name="tabs">
+        <label for="tab2" class="tab-title">IELTS</label>  
+        <input type="radio" id="tab3" name="tabs">
+        <label for="tab3" class="tab-title">CAE</label>
+        <input type="radio" id="tab4" name="tabs">
+        <label for="tab4" class="tab-title">FCE</label>
+        <input type="radio" id="tab5" name="tabs">
+        <label for="tab5" class="tab-title">CPE</label>
+        <input type="radio" id="tab6" name="tabs">
+        <label for="tab6" class="tab-title">BEC</label>
+        <section id="tab-content1"> 
+          <img src="images_1st_page/toefl.png" alt="TOEFL" class="exams__tab_img">
+          <p class="exams__tab_text">TOEFL (Test of English as a Foreign Language) – самый распространенный и наиболее признаваемый в мире экзамен по английскому языку, необходимый для учебы, трудоустройства, программ студенческого обмена и других целей. Результаты теста признаются более чем 10 тысячами колледжей и университетов в 150 странах мира, включая США, Канаду, Австралию и Новую Зеландию.</p>
+        </section>
+        <section id="tab-content2"> 
+          <img src="images_1st_page/ielts.png" alt="IELTS" class="exams__tab_img">
+          <p class="exams__tab_text">Экзамен IELTS признают большинство нанимателей и англоязычных университетов Европы, Австралии, Новой Зеландии и Канады. Существует две версии экзамена: выезжающие на ПМЖ сдают General Module, поступающие в вуз или аспирантуру – Academic Module, разделенный по отраслям: А – физика, инженерные науки; В – биология, медицина; С – гуманитарные науки.</p>
+        </section>
+        <section id="tab-content3"> 
+          <img src="images_1st_page/cae.png" alt="CAE" class="exams__tab_img">
+          <p class="exams__tab_text">CAE (Certificate in advanced English). Срок действия сертификата не ограничен. Сертификат признаётся многими работодателями и рядом университетов в Великобритании. Кроме того, сертификат признается Британской пограничной службой (UKBA) как удостоверяющий достаточное знание английского языка при подаче документов на иммиграционную визу.</p>
+        </section>
+        <section id="tab-content4"> 
+          <img src="images_1st_page/FCE.png" alt="FCE" class="exams__tab_img">
+          <p class="exams__tab_text">Экзамен FCE может подойти для летних курсов или foundation year (программы подготовки перед бакалавриатом для иностранных студентов). Официально рекомендуется тем, кто владеет письменным и разговорным английским на уровне Upper Intermediate (пороговый продвинутый уровень) Для бакалавриата или магистратуры такого сертификата недостаточно.</p>
+        </section>
+        <section id="tab-content5"> 
+          <img src="images_1st_page/CPE.png" alt="CPE" class="exams__tab_img">
+          <p class="exams__tab_text">CPE (Certificate of Proficiency in English). Старейший из кембриджских языковых экзаменов. Сертификат соответствует уровню C2 Шкалы Совета Европы и является экзаменом, подтверждающим наивысший уровень владения английским языком. Срок действия сертификата неограничен.</p>
+        </section>
+        <section id="tab-content6"> 
+          <img src="images_1st_page/BEC.png" alt="BEC" class="exams__tab_img">
+          <p class="exams__tab_text">Business English Certificate (BEC) — экзамены Кембриджского университета, разработанные для сертификации навыков владения деловым английским языком и умения общаться в сфере международного бизнеса. Экзамены ВЕС существуют на 3 уровнях: BEC Preliminary, BEC Vantage, BEC Higher.</p>
+        </section>
       </div>
     </div>
     <footer>

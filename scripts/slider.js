@@ -15,5 +15,5 @@ function carousel() {
 }
   items[sliderIndex-1].style.display = "block";
   dots[sliderIndex-1].className += " active";
-  setTimeout (carousel, 5000);
+  setTimeout (carousel, 10000);
 }
