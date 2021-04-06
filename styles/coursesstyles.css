@@ -1,0 +1,157 @@
+.wrapper_for_groups {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.nav-menu__wrapper {
+  min-width: 20%;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-menu {
+  position: sticky;
+  top: 0;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-menu ul  {
+  display: block;
+  list-style-type: none;
+}
+
+.course-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  background: transparent;
+  color: white;
+}
+
+.course-content ul {
+  list-style-image: url(../courses-images/arrow.png);
+}
+
+.card-course__paragraph {
+  border-bottom: 1px solid rgba(255, 140, 0, 1);
+}
+
+.card-course__paragraph_icon {
+  text-align: justify;
+}
+
+.card-course__paragraph_image {
+  float: left;
+  width: 20%;
+  margin: 2%;
+  transition: transform .3s;
+}
+
+.card-course__paragraph_image:hover {
+  transform: scale(1.1);
+}
+
+.rating-form {
+  text-align: center;
+  border: none;
+}
+
+.rating-form__title {
+
+}
+
+.rating-form__group {
+  margin: auto;
+  position: relative;
+  width: 10em;
+  height: 2em;
+  background-size: 2em auto;
+  background-image: url(../courses-images/off.svg);
+}
+
+.rating-form__star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 2em;
+  height: 2em;
+  font-size: inherit;
+  background-size: 2em auto;
+  appearance: none;
+  cursor: pointer;
+}
+
+.rating-form__star:focus {
+  outline: none;
+}
+
+.rating-form__star:checked, .rating-form__star:hover {
+  background-image: url(../courses-images/on.svg);
+}
+
+.rating-form__star:hover ~ .rating-form__star {
+  background-image: url(../courses-images/off.svg);
+}
+
+.rating-form__star:nth-of-type(1) {
+  z-index: 5;
+  width: 2em;
+}
+
+.rating-form__star:nth-of-type(2) {
+  z-index: 4;
+  width: 4em;
+}
+
+.rating-form__star:nth-of-type(3) {
+  z-index: 3;
+  width: 6em;
+}
+
+.rating-form__star:nth-of-type(4) {
+  z-index: 2;
+  width: 8em;
+}
+
+.rating-form__star:nth-of-type(5) {
+  z-index: 1;
+  width: 10em;
+}
+
+.button-up {
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 20%;
+}
+
+.button-up__nav button {
+  margin-bottom: 2rem;
+  font-size: 36px;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.1;
+  outline: none;
+}
+
+.button-up__nav {
+  position: fixed;
+}
+
+.button-up__nav button:hover {
+  opacity: 1;
+}
+
+.fa-clock-o, .fa-calendar, .fa-money {
+  margin: 1em;
+  color: darkorange;
+}

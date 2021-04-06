@@ -1,0 +1,81 @@
+.company-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 20%;
+}
+
+.company-info__text, .certificate {
+  color: white;
+  padding-left: 10%;
+}
+
+.company-info__text_banner {
+  width: 250px;
+  height: 350px;
+  background: url(../company-images/school-image.png);
+  background-size: cover;
+  overflow: hidden;
+  margin: 0 15px;
+  float: left;
+}
+
+.company-info__text_banner:hover .cover {
+  left: 0px;
+  transition: all 0.5s cubic-bezier(.99,.99,0,.61);
+}
+
+.cover {
+  position: relative;
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(.99,.99,0,.61);
+  left: -250px;
+}
+
+.title {
+  font-size: 18px;
+  color: darkorange;
+  text-align: center;
+}
+
+.cover a button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  float: right;
+  background: rgba(39, 92, 220, 1);
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.certificate {
+  text-align: justify;
+}
+
+.certificate__image {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  transition: all 1s ease;
+}
+
+.certificate__image_wrapper {
+  overflow: hidden;
+  width: 40%;
+  margin: 3% 3%;
+  float: right;
+}
+
+.certificate__image:hover {
+  transform: scale(1.2);
+}
+
+.advantages {
+  list-style-image: url(../company-images/arrow.png);
+  color: white;
+}
