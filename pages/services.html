@@ -15,18 +15,32 @@
   <div class="wrapper">
     <header>
       <div class="menu_and_search">
-        <nav>
-          <img src="../general_images/W.png" alt="logo" id="logo">
+        <nav class="menu-words">
+          <a href="../index.html" id="logo"><img src="../general_images/W.png" alt="logo"></a>
           <ul class="menu">
             <li><a href="../index.html"><i class="fa fa-home" aria-hidden="true" id="home"></i></a></li>
-            <li><a href="company.html" id="aboutUs" onmouseover="translateAboutUs1 (this,'About us')" onmouseout="translateAboutUs2 (this, 'О нас')">О нас</a></li>
-            <li><a href="services.html" id="services" onmouseover="translateServices1 (this,'Services')" onmouseout="translateServices2 (this, 'Услуги')">Услуги</a></li>
-            <li><a href="promotions.html" id="promotions" onmouseover="translatePromotions1 (this,'Promotions')" onmouseout="translatePromotions2 (this, 'Акции')">Акции <span></span></a></li>
-            <li><a href="courses.html" id="courses" onmouseover="translateCourses1 (this,'Courses')" onmouseout="translateCourses2 (this, 'Курсы')">Курсы</a></li>
-            <li><a href="news.html" id="news" onmouseover="translateNews1 (this,'News')" onmouseout="translateNews2 (this, 'Новости')">Новости</a></li>
-            <li><a href="contacts.html" id="contacts" onmouseover="translateContacts1 (this,'Contacts')" onmouseout="translateContacts2 (this, 'Контакты')">Контакты</a></li>
+            <li><a href="company.html" onmouseover="translateTextToEng (this,'About us')" onmouseout="translateTextToRus (this, 'О нас')">О нас</a></li>
+            <li><a href="services.html" onmouseover="translateTextToEng (this,'Services')" onmouseout="translateTextToRus (this, 'Услуги')">Услуги</a></li>
+            <li><a href="promotions.html" onmouseover="translateTextToEng (this,'Promotions')" onmouseout="translateTextToRus (this, 'Акции')">Акции</a></li>
+            <li><a href="courses.html" onmouseover="translateTextToEng (this,'Courses')" onmouseout="translateTextToRus (this, 'Курсы')">Курсы</a></li>
+            <li><a href="news.html" onmouseover="translateTextToEng (this,'News')" onmouseout="translateTextToRus (this, 'Новости')">Новости</a></li>
+            <li><a href="contacts.html"onmouseover="translateTextToEng (this,'Contacts')" onmouseout="translateTextToRus (this, 'Контакты')">Контакты</a></li>
           </ul>
         </nav>
+        <div class="menu_and_search">
+          <nav class="menu-icons">
+            <a href="../index.html" id="logo"><img src="../general_images/W.png" alt="logo"></a>
+            <ul class="menu">
+              <li><a href="../index.html"><i class="fa fa-home" aria-hidden="true" id="home"></i></a></li>
+              <li><a href="company.html"><i class="fa fa-users" aria-hidden="true"></i></a></li>
+              <li><a href="services.html"><i class="fa fa-list" aria-hidden="true"></i></a></li>
+              <li><a href="promotions.html"><i class="fa fa-fire" aria-hidden="true"></i></a></li>
+              <li><a href="courses.html"><i class="fa fa-book" aria-hidden="true"></i></a></li>
+              <li><a href="news.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a></li>
+              <li><a href="contacts.html"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+            </ul>
+          </nav>
+        </div>
         <div class="search">
           <form>
             <label> 
