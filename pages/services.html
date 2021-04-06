@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="shortcut icon" href="../general_images/icon.png">
   <script src="../scripts/translateText.js"></script>
+  <script src="../scripts/darkLayerForServices.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -20,7 +21,7 @@
             <li><a href="../index.html"><i class="fa fa-home" aria-hidden="true" id="home"></i></a></li>
             <li><a href="company.html" id="aboutUs" onmouseover="translateAboutUs1 (this,'About us')" onmouseout="translateAboutUs2 (this, 'О нас')">О нас</a></li>
             <li><a href="services.html" id="services" onmouseover="translateServices1 (this,'Services')" onmouseout="translateServices2 (this, 'Услуги')">Услуги</a></li>
-            <li><a href="advantages.html" id="promotions" onmouseover="translatePromotions1 (this,'Promotions')" onmouseout="translatePromotions2 (this, 'Акции')">Акции <span></span></a></li>
+            <li><a href="promotions.html" id="promotions" onmouseover="translatePromotions1 (this,'Promotions')" onmouseout="translatePromotions2 (this, 'Акции')">Акции <span></span></a></li>
             <li><a href="courses.html" id="courses" onmouseover="translateCourses1 (this,'Courses')" onmouseout="translateCourses2 (this, 'Курсы')">Курсы</a></li>
             <li><a href="news.html" id="news" onmouseover="translateNews1 (this,'News')" onmouseout="translateNews2 (this, 'Новости')">Новости</a></li>
             <li><a href="contacts.html" id="contacts" onmouseover="translateContacts1 (this,'Contacts')" onmouseout="translateContacts2 (this, 'Контакты')">Контакты</a></li>
@@ -36,30 +37,24 @@
         </div>
       </div>
     </header>
-    <div class="services__item_flip">
-      <h1>Услуги переводчика</h1>
-      <div class="top">
-        <div class="front face"></div>
-        <div class="back face">
-          <p class="services__text">Наша школа оказывает услуги перевода материалов любой тематики. Каждый заказ, выполненный с помощью наших услуг, проходит научную и литературную редактуру, а также финальную вычитку.</p>
-          <p class="services__text">Наш перевод будет стилистически и терминологически верен. Мы даем гарантию на точность, правильность, качественность, читабельность, полноту и адекватность каждого нашего перевода.</p>
-        </div>
-      </div>
-      <div class="bottom"></div>
-    </div>
-
     <div class="services">
       <div class="services__item">
-        <h1 class="services__item_title">Индивидуальное обучение</h1>
-        <div class="services__image"><img src="../services-images/service2.jpg" alt="learn-service" class="services__img"></div>
-        <p class="services__text">Данный формат обучения идеален для занятых людей с насыщенным графиком. Каждому обучающемуся гарантирована помощь личного преподавателя. Мы гарантируем высокое качество обучения по очень приемлемой цене.</p>
-        <p class="services__text">Вы сами выбираете время, место и темп обучения. Наши материалы подходят для людей любого возраста и любой начальной подготовки.</p>
+        <div class="services__item_layer"></div>
+        <h1 class="services__item_title" id="blue">Услуги перевода</h1>
+        <img src="../services-images/service1.jpg" alt="translate-service" class="services__img">
+        <p class="services__text">Наша школа оказывает услуги перевода материалов любой тематики. Каждый заказ, выполненный с помощью наших услуг, проходит научную и литературную редактуру, а также финальную вычитку.<br>Наш перевод будет стилистически и терминологически верен. Мы даем гарантию на точность, правильность, качественность, читабельность, полноту и адекватность каждого нашего перевода.</p>
       </div>
       <div class="services__item">
-        <h1 class="services__item_title">Репетиторство</h1>
-        <div class="services__image"><img src="../services-images/service3.jpg" alt="trainer-service" class="services__img"></div>
-        <p class="services__text">Подготовим к международным и государственным экзаменам, избавим от языкового барьера и поможем разобраться с грамматикой.</p>
-        <p class="services__text">Обучение может проходить как в аудиторном, так и в онлайн формате. У нас есть всё необходимое для занятий: лучшие преподаватели, аудио и видеочат для связи с ними, большая библиотека материалов.</p>
+        <div class="services__item_layer"></div>
+        <h1 class="services__item_title" id="green">Индивидуальное обучение</h1>
+        <img src="../services-images/service2.jpg" alt="learn-service" class="services__img">
+        <p class="services__text">Данный формат обучения идеален для занятых людей с насыщенным графиком. Каждому обучающемуся гарантирована помощь личного преподавателя. Мы гарантируем высокое качество обучения по очень приемлемой цене.<br>Вы сами выбираете время, место и темп обучения. Наши материалы подходят для людей любого возраста и любой начальной подготовки.</p>
+      </div>
+      <div class="services__item">
+        <div class="services__item_layer"></div>
+        <h1 class="services__item_title" id="red">Репетиторство</h1>
+        <img src="../services-images/service3.jpg" alt="trainer-service" class="services__img">
+        <p class="services__text">Подготовим к международным и государственным экзаменам, избавим от языкового барьера и поможем разобраться с грамматикой.<br>Обучение может проходить как в аудиторном, так и в онлайн формате. У нас есть всё необходимое для занятий: лучшие преподаватели, аудио и видеочат для связи с ними, большая библиотека материалов.</p>
       </div>
     </div>
     <footer>

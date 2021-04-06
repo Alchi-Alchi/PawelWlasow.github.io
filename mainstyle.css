@@ -7,6 +7,7 @@
   z-index: 3;
   width: 15%;
   color: white;
+  background: rgba(0, 0, 0, 0.2);
   padding: 10px;
   margin-top: 2%;
   text-align: center;
@@ -103,7 +104,7 @@
   height: 15px;
   width: 15px;
   margin: auto;
-  background-color: rgba(24, 24, 24, 1);
+  background-color: rgba(240, 240, 240, 1);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 1s ease;
@@ -118,7 +119,6 @@
   justify-content: center;
   width: 100%;
   margin: 1% auto;
-  background: rgba(52, 60, 80, 1);
 }
 
 .exams-content__text {
@@ -133,10 +133,19 @@
   margin: 1% auto;
 }
 
+@media (max-width: 1290px) {
+  .exams-content {
+    flex-direction: column;
+    justify-content: start;
+  }
+  .exams {
+    width: 100%;
+  }
+}
+
 section { 
   width: 100%;
   margin: -8px auto;
-  border: 1px solid darkorange;
   border-top: none;
   background: rgba(0, 0, 0, 0.7);
   display: none;
@@ -157,9 +166,8 @@ section {
 }
 
 input:checked + label {
-  border: 1px solid darkorange;
+  border-top: 1px solid darkorange;
   color: darkorange;
-  border-bottom: none;
 }
 
 #tab1:checked ~ #tab-content1,
