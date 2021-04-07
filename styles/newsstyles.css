@@ -2,6 +2,11 @@
   display: flex;
 }
 
+.content-title, h3 {
+  color: darkorange;
+  text-align: center;
+}
+
 .news-block {
   display: flex;
   justify-content: center;
@@ -12,7 +17,7 @@
   width: 25%;
   margin: 1%;
   color: white;
-  background-color: #2C303A;
+  background-color: #161B22;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -83,11 +88,10 @@
   width: 20%;
   margin: 1% auto;
   padding: 1%;
-  border: 1px solid darkorange;
   border-radius: 10px;
   outline: none;
-  background: transparent;
-  color: white;
+  background: white;
+  color: black;
 }
 
 .subscription__button {
