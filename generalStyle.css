@@ -176,7 +176,6 @@ footer {
   width: 25%;
   margin: 0 1em;
   text-align: justify;
-  line-height: 3vh;
 }
 
 @media (max-width:900px) {

@@ -11,6 +11,10 @@
   }
 }
 
+.contact-wrapper__form {
+  width: 50%;
+}
+
 .contact-wrapper__form fieldset {
   display: flex;
   flex-direction: column;
@@ -21,13 +25,14 @@
   margin: 1rem;
   border: 1px solid darkorange;
   color: white;
-  background-color: #111111;
+  background-color: transparent;
 }
 
 .contact-wrapper__form_input {
+  width: inherit;
   z-index: 1;
-  margin: 1%;
-  padding: 1em 10em 1em 4em;
+  margin: 0 auto;
+  padding: 1rem 10rem 1rem 4rem;
   border: none;
   outline: none;
   background: #EFEFEF;
@@ -35,27 +40,28 @@
 
 .fa-user, .fa-envelope, .fa-phone-square {
   position: absolute;
-  left: 18px;
-  padding: 12px 14px;
+  left: 0.8rem;
+  padding: 15px 20px;
   z-index: 2;
   background: rgba(17, 17, 17, 0.8);
   color: darkorange;
 }
 
 .fa-user {
-  top: 11px;
+  top: 0.4rem;
 }
 
 .fa-envelope {
-  top: 87px;
+  top: 4.9rem;
 }
 
 .fa-phone-square {
-  top: 162px;
+  top: 9.4rem;
 }
 
 .contact-wrapper__form_textarea {
-  margin: 1rem;
+  width: inherit;
+  margin: 0 auto;
   padding: 1rem;
   outline: none;
 }
@@ -69,9 +75,19 @@
   cursor: pointer;
   background-color: #A01100;
   color: white;
+  box-shadow: 0 3px 1px 1px #550b02;
+}
+
+.contact-wrapper__form_button:active {
+  box-shadow: none;
+}
+
+#checkbox, a {
+  text-align: center;
 }
 
 .contact_info {
+  width: 50%;
   color: white;
   padding: 1rem;
   margin: 1rem;
@@ -86,6 +102,7 @@
   position: relative;
   display: block;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .phone__img:hover {
