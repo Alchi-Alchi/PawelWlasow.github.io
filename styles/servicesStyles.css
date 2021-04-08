@@ -1,3 +1,8 @@
+.services-text {
+  text-align: center;
+  color: darkorange;
+}
+
 .services {
   width: 100%;
   display: flex;
@@ -7,15 +12,19 @@
 @media (max-width:1080px) {
   .services {
     flex-direction: column;
+    justify-content: start;
     align-items: center;
     width: 100%;
   }
   .services__item {
-    width: 100%;
+    flex-direction: row;
+    min-width: 100%;
   }
 }
 
 .services__item {
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 30%;
   margin: 1%;
@@ -45,34 +54,9 @@
 
 .services__text {
   padding: 1em;
-  color: white;
+  color: darkorange;
 }
 
 .services__img {
   width: 100%;
-}
-
-.service-accordion {
-  background-color: rgba(160, 17, 0, 1);
-  color: rgba(255, 255, 255, 1);
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 24px;
-  transition: all 0.4s ease;
-}
-
-.active, .service-accordion:hover {
-  background-color: rgba(17, 17, 17, 1);
-  color: darkorange;
-  display: block;
-}
-
-.accordion-info {
-  padding: 0 18px;
-  display: none;
-  background-color: rgba(39, 92, 220, 1);
 }

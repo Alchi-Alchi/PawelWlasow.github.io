@@ -1,21 +1,28 @@
 .wrapper_for_groups {
   display: flex;
   justify-content: space-between;
-  margin: 1rem;
 }
 
 .nav-menu__wrapper {
   min-width: 20%;
   border-right: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .nav-menu {
   position: sticky;
   top: 0;
+  left: 0;
+  padding: 0 10px;
 }
 
 .nav-menu ul li a {
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+}
+
+.nav-menu ul li a:hover {
   color: white;
 }
 
@@ -34,12 +41,47 @@
   color: white;
 }
 
+#title-courses {
+  text-align: center;
+}
+
 .course-content ul {
   list-style-image: url(../courses-images/arrow.png);
 }
 
+.course-accordion {
+  margin: 1%;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  background: rgba(255, 140, 0, 1);
+  color: rgba(17, 17, 17, 1);
+  transition: all 0.5s ease;
+  outline: none;
+}
+
+.course-accordion::after {
+  content: '\002B';
+  float: right;
+}
+
+.active, .course-accordion:hover {
+  background: transparent;
+  color: darkorange;
+}
+
+.active:after {
+  content: "\2212";
+}
+
 .card-course__paragraph {
   border-bottom: 1px solid rgba(255, 140, 0, 1);
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
 }
 
 .card-course__paragraph_icon {
@@ -63,7 +105,8 @@
 }
 
 .rating-form__title {
-
+  color: darkorange;
+  text-align: center;
 }
 
 .rating-form__group {
