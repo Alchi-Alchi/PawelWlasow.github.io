@@ -5,7 +5,9 @@
   display: flex;
   flex-direction: column;
   z-index: 3;
-  width: 15%;
+  width: 20%;
+  min-width: 200px;
+  border-radius: 5px;
   color: white;
   background: rgba(0, 0, 0, 0.2);
   padding: 10px;
@@ -14,6 +16,7 @@
 }
 
 .sign-up__input {
+  min-width: 200px;
   border: none;
   border-radius: 10px;
   padding: 10px;
@@ -24,20 +27,49 @@
 }
 
 .sign-up__button {
-  color: white;
-  border: 1px solid rgba(255, 140, 0, 1);
-  background-color: transparent;
+  position: relative;
   padding: 10px 40px;
   margin: 10px;
   font-size: 18px;
+  overflow: hidden;
   outline: none;
   cursor: pointer;
-  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  color: white;
+  border: 1px solid rgba(255, 140, 0, 1);
+  background-color: transparent;
 }
 
 .sign-up__button:hover {
-  color: rgba(39, 92, 220, 1);
-  border: 1px solid rgba(39, 92, 220, 1);
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+    color: #ffffff;
+    z-index: 3;
+}
+
+.sign-up__button:before {
+  content: "";
+  background-color: rgba(255, 140, 0, 0.5);
+  height: 100%;
+  width: 3em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -4.5em;
+  -webkit-transform: skewX(-45deg) translateX(0);
+  transform: skewX(-45deg) translateX(0);
+  -webkit-transition: none;
+  transition: none;
+}    
+  .sign-up__button:hover:before {
+  -webkit-transform: skewX(-45deg) translateX(13.5em);
+  transform: skewX(-45deg) translateX(22.5em);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .slider-content  {
@@ -122,25 +154,24 @@
 }
 
 .exams-content__text {
-  width: 30%;
+  width: 40%;
   padding: 1%;
   font-size: 24px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  color: darkorange;
+}
+
+.exams-content__end {
+  padding: 1%;
+  background: rgba(0, 0, 0, 0.3);
   color: darkorange;
 }
 
 .exams {
   width: 50%;
-  margin: 1% auto;
-}
-
-@media (max-width: 1290px) {
-  .exams-content {
-    flex-direction: column;
-    justify-content: start;
-  }
-  .exams {
-    width: 100%;
-  }
+  margin: 1% 0;
+  padding: 1%;
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 section { 
@@ -159,6 +190,7 @@ section {
   display: inline-block;
   text-align: center;
   padding: 10px 30px;
+  margin: 1% 0;
   margin-bottom: -10px;
   cursor: pointer;
   background: transparent;
@@ -187,4 +219,38 @@ input:checked + label {
 .exams__tab_text {
   color: white;
   padding: 10px 5px;
+}
+
+@media (max-width:1190px) {
+  .sign-up {
+    position: static;
+    width: 100%;
+  }
+  .slider-content__item_text {
+    top: 0;
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+@media (max-width:670px) {
+  .slider-content__item_text {
+    font-size: 16px;
+    padding: 1%;
+  }
+}
+
+@media (max-width: 1290px) {
+  .exams-content {
+    flex-direction: column;
+    justify-content: start;
+  }
+  .exams {
+    width: 100%;
+    border: none;
+  }
+  .exams-content__text {
+    width: 100%;
+    border: none;
+  }
 }
