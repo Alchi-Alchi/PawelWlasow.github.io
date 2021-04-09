@@ -237,11 +237,20 @@ footer {
   }
 }
 
+@media (max-width: 1030px) {
+  #logo {
+    display: none;
+  }
+}
+
 @media (max-width: 850px) {
   .menu-words {
     display: none;
   }
   .menu-icons {
     display: block;
+  }
+  body {
+    font-size: 18px;
   }
 }

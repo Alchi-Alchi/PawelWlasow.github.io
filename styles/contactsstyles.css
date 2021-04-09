@@ -14,7 +14,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  font-size: 18px;
+  padding: 1rem;
   margin: 1rem;
   border: 1px solid darkorange;
   color: white;
@@ -25,7 +25,6 @@
   position: relative;
   min-width: 300px;
   z-index: 1;
-  
 }
 
 .form-input {
@@ -40,7 +39,7 @@
 .fa-user, .fa-envelope, .fa-phone-square {
   position: absolute;
   left: 0;
-  padding: 15px 20px;
+  padding: 15px;
   z-index: 2;
   background: rgba(17, 17, 17, 0.8);
   color: darkorange;
