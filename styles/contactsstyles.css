@@ -5,21 +5,14 @@
   width: 90%;
 }
 
-@media (max-width:900px) {
-  .contact-wrapper {
-    flex-direction: column;
-  }
-}
-
 .contact-wrapper__form {
-  width: 50%;
+  width: 80%;
 }
 
 .contact-wrapper__form fieldset {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
   width: 100%;
   font-size: 18px;
   margin: 1rem;
@@ -28,10 +21,16 @@
   background-color: transparent;
 }
 
-.contact-wrapper__form_input {
-  width: inherit;
+.contact-wrapper__form_inputs {
+  position: relative;
+  min-width: 300px;
   z-index: 1;
-  margin: 0 auto;
+  
+}
+
+.form-input {
+  width: 100%;
+  margin: 2% auto;
   padding: 1rem 10rem 1rem 4rem;
   border: none;
   outline: none;
@@ -40,7 +39,7 @@
 
 .fa-user, .fa-envelope, .fa-phone-square {
   position: absolute;
-  left: 0.8rem;
+  left: 0;
   padding: 15px 20px;
   z-index: 2;
   background: rgba(17, 17, 17, 0.8);
@@ -48,25 +47,26 @@
 }
 
 .fa-user {
-  top: 0.4rem;
+  top: 6%;
 }
 
 .fa-envelope {
-  top: 4.9rem;
+  top: 39%;
 }
 
 .fa-phone-square {
-  top: 9.4rem;
+  top: 72%;
 }
 
 .contact-wrapper__form_textarea {
-  width: inherit;
+  width: 100%;
   margin: 0 auto;
   padding: 1rem;
   outline: none;
 }
 
 .contact-wrapper__form_button {
+  width: 100%;
   margin: 1rem;
   padding: 1rem 3rem;
   font-size: 18px;
@@ -86,11 +86,23 @@
   text-align: center;
 }
 
-.contact_info {
-  width: 50%;
+.contact-info {
+  width: 100%;
+  min-width: 450px;
   color: white;
   padding: 1rem;
   margin: 1rem;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  margin: 1%;
+  padding: 1%;
+  width: 100%;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
 }
 
 .phone {
@@ -133,4 +145,16 @@
 .source:hover {
   color: darkorange;
   text-decoration-line: underline;
+}
+
+@media (max-width:900px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  .contact-info {
+    width: 100%;
+  }
+  .contact-wrapper__form {
+    width: 100%;
+  }
 }

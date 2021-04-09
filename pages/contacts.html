@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -23,7 +23,7 @@
             <li><a href="promotions.html" onmouseover="translateTextToEng (this,'Promotions')" onmouseout="translateTextToRus (this, 'Акции')">Акции</a></li>
             <li><a href="courses.html" onmouseover="translateTextToEng (this,'Courses')" onmouseout="translateTextToRus (this, 'Курсы')">Курсы</a></li>
             <li><a href="news.html" onmouseover="translateTextToEng (this,'News')" onmouseout="translateTextToRus (this, 'Новости')">Новости</a></li>
-            <li><a href="contacts.html"onmouseover="translateTextToEng (this,'Contacts')" onmouseout="translateTextToRus (this, 'Контакты')">Контакты</a></li>
+            <li><a href="contacts.html" onmouseover="translateTextToEng (this,'Contacts')" onmouseout="translateTextToRus (this, 'Контакты')">Контакты</a></li>
           </ul>
         </nav>
         <div class="menu_and_search">
@@ -51,22 +51,22 @@
       </div>
     </header>
     <div class="contact-wrapper">
-      <div class="contact_info"> 
+      <div class="contact-info"> 
         <p>
           <span class="orange-word">О нас:/About us</span><br>
-          Частное предприятие Школа английского языка "Winnfield" <br>
+          Частное предприятие Школа английского языка "Winnfield"<br>
           УНП 000 000 000 <br>
           Режим работы: Пн-Сб 9.00-21.00
         </p>
           <span class="orange-word">Наши контакты:/Our contacts</span><br>
-          <div class="header-contacts">
+          <div class="contacts">
             <a href="tel:+375292868385" class="block">
-              <img src="../contacts-images/mts.png" alt="MTS" width="3%">
-              <img src="../contacts-images/viber.png" alt="viber" width="3%">
+              <img src="../contacts-images/mts.png" alt="MTS">
+              <img src="../contacts-images/viber.png" alt="viber">
               <span class="number">+375 29 286-83-85</span>
             </a>
             <a href="mailto:v.pavel.03@gmail.com" class="block">
-              <img src="../contacts-images/post.png" alt="gmail" width="3%">
+              <img src="../contacts-images/post.png" alt="gmail">
               <span class="mail">v.pavel.03@gmail.com</span>
             </a>
         </div>
@@ -79,15 +79,19 @@
       <div class="contact-wrapper__form">
         <fieldset>
           <legend class="orange-word">Форма обратной связи</legend>
-          <i class="fa fa-user" aria-hidden="true"></i>
-          <input type="text" placeholder="*Имя" class="contact-wrapper__form_input" required><br>
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-          <input type="email" placeholder="E-mail" class="contact-wrapper__form_input"><br>
-          <i class="fa fa-phone-square" aria-hidden="true"></i>
-          <input type="text" placeholder="*Телефон" class="contact-wrapper__form_input" required><br>
-          <textarea name="" id="" cols="30" rows="10" placeholder="Примечания" class="contact-wrapper__form_textarea"></textarea><br>
-          <p id="checkbox"><input type="checkbox" required>Я согласен на обработку персональных данных</p>
-          <a href=""><button type="submit" class="contact-wrapper__form_button">Отправить</button></a>
+          <form>
+            <div class="contact-wrapper__form_inputs"> 
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <input type="text" placeholder="*Имя" class="form-input" required><br>
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <input type="email" placeholder="E-mail" class="form-input"><br>
+              <i class="fa fa-phone-square" aria-hidden="true"></i>
+              <input type="text" placeholder="*Телефон" class="form-input" required><br>
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Примечания" class="contact-wrapper__form_textarea"></textarea><br>
+            <p id="checkbox"><input type="checkbox" required>Я согласен на обработку персональных данных</p>
+            <button type="submit" class="contact-wrapper__form_button">Отправить</button>
+          </form>
         </fieldset>
       </div>
     </div>
@@ -110,8 +114,8 @@
           <span class="orange-word">Контакты:</span> <br>
           Телефон: +375 29 286-83-85 <br>
           e-mail: v.pavel.03@gmail.com<br> 
-          <a href=""><img src="../general_images/vk.png" alt="vk" width="10%"></a>
-          <a href=""><img src="../general_images/tg.png" alt="telegram" width="10%"></a>
+          <a href=""><img src="../general_images/vk.png" alt="vk"></a>
+          <a href=""><img src="../general_images/tg.png" alt="telegram"></a>
         </p>
       </div>
       <div class="footer__payment">
