@@ -16,7 +16,7 @@
 .news-block__item {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 30%;
   margin: 1%;
   border: 3px solid darkorange;
   color: white;
@@ -91,6 +91,7 @@
 
 .subscription__input {
   width: 20%;
+  min-width: 300px;
   margin: 1% auto;
   padding: 1%;
   border-radius: 10px;
@@ -101,6 +102,7 @@
 
 .subscription__button {
   width: 20%;
+  min-width: 300px;
   padding: 1%;
   margin: 1% auto;
   border: 1px solid darkorange;
@@ -113,4 +115,30 @@
 
 .subscription__button:hover {
   
+}
+
+@media (max-width: 1450px) {
+  .news-block {
+    justify-content: space-around;
+  }
+  .news-block__item {
+    min-width: 40%;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .news-block__item {
+    min-width: 45%;
+  }
+}
+
+@media (max-width: 690px) {
+  .news-block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .news-block__item {
+    min-width: 100%;
+  }
 }

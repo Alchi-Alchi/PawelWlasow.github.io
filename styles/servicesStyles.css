@@ -12,12 +12,9 @@
 @media (max-width:1080px) {
   .services {
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
     width: 100%;
   }
   .services__item {
-    flex-direction: row;
     min-width: 100%;
   }
 }
@@ -38,6 +35,7 @@
   padding: 5px 15px;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
 #red {
@@ -54,9 +52,18 @@
 
 .services__text {
   padding: 1em;
+  text-align: center;
   color: darkorange;
 }
 
 .services__img {
   width: 100%;
+  transition: all 0.5s ease;
+}
+
+.services__img:hover {
+  -o-transform: translateY(-5%);
+  -moz-transform: translateY(-5%);
+  -ms-transform: translateY(-5%);
+  transform: translateY(-5%);
 }

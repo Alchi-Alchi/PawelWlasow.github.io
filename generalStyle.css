@@ -21,7 +21,7 @@ html {
   background-color: darkorange;
 }
 
-input::-webkit-input-placeholder { 
+input::-webkit-input-placeholder {
   color: black; 
 }
 
@@ -33,7 +33,44 @@ body {
   margin: 0;
   background-color: #111111;
   font-family: 'Architects Daughter', cursive;
-  font-size: 18px;
+  font-size: 24px;
+}
+
+#toTop {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: all .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+}
+
+#toTop::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-size: 2em;
+  line-height: 50px;
+  color: #ffffff;
+}
+
+#toTop:hover {
+  cursor: pointer;
+  background-color: rgba(255, 140, 0, 1);
+}
+
+#toTop:active {
+  background-color: #111111;
+}
+
+#toTop .show {
+  opacity: 1;
+  visibility: visible;
 }
 
 #logo {
@@ -49,14 +86,6 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: black;
-}
-
-.block {
-  display: flex;
-  align-items: center;
-  color: white;
-  margin: 1rem;
-  text-decoration: none;
 }
 
 nav ul {
@@ -91,22 +120,6 @@ nav a {
   display: none;
 }
 
-@media (max-width: 1260px) {
-  .menu {
-    font-size: 18px;
-    margin: 0.5rem;
-  }
-}
-
-@media (max-width: 850px) {
-  .menu-words {
-    display: none;
-  }
-  .menu-icons {
-    display: block;
-  }
-}
-
 form {
   position: relative;
   width: auto;
@@ -127,7 +140,7 @@ form {
   width: 20%;
   height: 42px;
   position: absolute;
-  top: 0;
+  top: 1px;
   right: 0;
   outline: none;
   cursor: pointer;
@@ -178,6 +191,10 @@ footer {
   text-align: justify;
 }
 
+.contacts img {
+  width: 10%;
+}
+
 @media (max-width:900px) {
   footer {
     flex-direction: column;
@@ -205,4 +222,26 @@ footer {
 
 .blue-word {
   color: rgba(39, 92, 220, 1);
+}
+
+@media (max-width: 1260px) {
+  .menu {
+    font-size: 18px;
+    margin: 0.5rem;
+  }
+  .search__window {
+    width: 150px;
+  }
+  .search__window:focus {
+    width: 200px;
+  }
+}
+
+@media (max-width: 850px) {
+  .menu-words {
+    display: none;
+  }
+  .menu-icons {
+    display: block;
+  }
 }

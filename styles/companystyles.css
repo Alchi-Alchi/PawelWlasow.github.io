@@ -11,8 +11,8 @@
 }
 
 .company-info__text_banner {
-  width: 250px;
-  height: 350px;
+  width: 350px;
+  height: 500px;
   background: url(../company-images/school-image.png);
   background-size: cover;
   overflow: hidden;
@@ -33,7 +33,7 @@
   background: rgba(0, 0, 0, 0.9);
   overflow: hidden;
   transition: all 0.5s cubic-bezier(.99,.99,0,.61);
-  left: -250px;
+  left: -350px;
 }
 
 .title {
@@ -43,7 +43,7 @@
 }
 
 .cover a button {
-  padding: 5px 10px;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   float: right;
@@ -55,6 +55,7 @@
 
 .certificate {
   text-align: justify;
+  width: 100%;
 }
 
 .certificate__image {
@@ -66,7 +67,7 @@
 
 .certificate__image_wrapper {
   overflow: hidden;
-  width: 40%;
+  width: 50%;
   margin: 3% 3%;
   float: right;
 }

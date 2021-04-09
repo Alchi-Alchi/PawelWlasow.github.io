@@ -11,8 +11,14 @@ section {
   z-index: 4;
 }
 
-.section_text-content h1 {
+.section_text-content {
   text-align: center;
+  margin: 0 auto;
+}
+
+.section_text-content a {
+  text-decoration: none;
+  color: rgba(39, 92, 220, 1);
 }
 
 .offers-wrapper {
@@ -24,13 +30,40 @@ section {
   padding-top: 12%;
 }
 
+@media (max-width: 1610px) {
+  .offers-wrapper {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
 .offers {
   position: relative;
   left: -15%;
   transform: translate(50%, -50%);
-  width: 400px;
-  height: 300px;
+  min-width: 400px;
+  min-height: 300px;
   margin: 1%;
+}
+
+@media (max-width: 1290px) {
+  .offers {
+    margin: 1%;
+  }
+  .section_text-content {
+    margin: 5% auto;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 850px) {
+  .offers-wrapper {
+    justify-content: start;
+  }
+  .section_text-content {
+    margin: 10% auto;
+  }
 }
 
 .offers:hover .offers__card-front {
@@ -48,7 +81,6 @@ section {
   height: 100%;
   transition: .6s ease-in-out;
   border-radius: 10px;
-  box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.3);
   backface-visibility: hidden;
 }
 
@@ -59,8 +91,9 @@ section {
 .offers__card-back {
   z-index: 1;
   transform: rotateY(180deg);
+  font-size: 22px;
   background: rgba(39, 92, 220, 1);
-  padding: 3%;
+  padding: 0 1%;
   border: 1px dashed white;
   color: white;
 }
@@ -68,17 +101,6 @@ section {
 .offers__card-back h3 {
   text-align: center;
   border-bottom: 1px dashed white;
-}
-
-@keyframes showLeft {
-  from {
-    left: -100%;
-    opacity: 0.1;
-  }
-  to {
-    left: 0;
-    opacity: 1;
-  }
 }
 
 .offers__item_img {
@@ -90,7 +112,7 @@ section {
   width: 100%;
   bottom: 0;
   left: 0;
-  padding: 1rem;
+  padding: 3%;
   font-size: 24px;
   color: white;
   background: rgba(255, 140, 0, 0.8);
